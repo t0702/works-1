@@ -87,18 +87,61 @@ body{
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
-    color:white;
-    padding: 0 20px;
-    font-size: 20px;
+    filter: drop-shadow(0 0 10px rgb(0, 0, 0));
+    color: white;
+    text-align: center;
+    font-weight: lighter;
+    font-size:20px;
+}
+
+#main_tx{
+    padding: 15px 20px;
+    font-size: 24px;
     border: 1px solid white;
     filter: drop-shadow(0 0 10px rgb(0, 0, 0));
+    background-color: rgb(0, 0, 0, 0.1);
+}
+.right-left-border{
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+    padding: 0 10px;
+}
 
+
+#playnow-out{
+    width:240px;
+    height:80px;
+    border-style: solid;
+    border-image: linear-gradient(to left, var(--strong-color), var(--light-color), var(--strong-color));
+    border-image-slice: 1;
+    position: absolute;
+    right: 100px;
+    bottom:130px;
+    cursor: pointer;
+}
+#playnow-in{
+    width: 240px;
+    height:80px;
+    background-color: rgb(0, 0, 0,0.4);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#playnow-in > p{
+    margin:0;
+    font-weight: bold;
+    font-size: 30px;
+    color: transparent;
+    background: var(--main-color);
+    background: -webkit-linear-gradient(left, var(--strong-color), var(--light-color), var(--strong-color));
+    -webkit-background-clip: text;
+            background-clip: text;
 }
 
 
 #arrowbox{
     width: 100vw;
-    height: 80px;
+    height: 85px;
     background-color: rgb(22,22,22,0.5);
     position: absolute;
     bottom: 0;
@@ -106,4 +149,4 @@ body{
     justify-content: center;
     align-items: center;
 }
-
+/* --------------------------------------- */
