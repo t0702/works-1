@@ -1,8 +1,109 @@
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&display=swap&subset=korean');
+/* font-family: 'Noto Sans KR', sans-serif; */
+
 :root{
     --main-color: #131313;
     --point-color: #f2a900;
     --strong-color: #ff8a00;
+    --light-color: #f6ce68;
 }
 #Element{
-    
+    margin: 0 auto;
+    width: 100vw;
 }
+* {font-family: 'Noto Sans KR', sans-serif;}
+
+body{ 
+    margin: 0;
+}
+
+/* -------------------main--------------------- */
+#main{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../PUBG/img/main2.png);
+    background-size: cover;
+    background-position: 50% 50%;
+    transform: translate(-50% -50%);
+    position: relative;
+}
+#nav-top{
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#nav-top ul{
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+}
+#nav-top li{
+    list-style: none;
+    padding-left: 50px;
+}
+#logo, #logo img{ width: 70px;}
+
+#nav-side{
+    padding-left: 100px;
+}
+#nav-side ul{
+    color:white;
+    padding: 0;
+    font-size: 23px;
+}
+#nav-side li{
+    padding: 10px 0;
+    list-style: none;
+}
+
+#nav-side a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+#nav-side a:hover{
+    background: #55ffaa;
+    background: -webkit-linear-gradient(left, var(--strong-color), var(--point-color), var(--light-color));
+    /* background:    -moz-linear-gradient(right, #55ff55, #55ffff);
+    background:      -o-linear-gradient(right, #55ff55, #55ffff);
+    background:         linear-gradient(to right, #55ff55, #55ffff); */
+    -webkit-background-clip: text;
+            background-clip: text;
+    color: transparent;
+    font-weight: bold;
+    filter: drop-shadow( 0 0 10px rgb(0, 0, 0,0.3));
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+
+#center_tx{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    color:white;
+    padding: 0 20px;
+    font-size: 20px;
+    border: 1px solid white;
+    filter: drop-shadow(0 0 10px rgb(0, 0, 0));
+
+}
+
+
+#arrowbox{
+    width: 100vw;
+    height: 80px;
+    background-color: rgb(22,22,22,0.5);
+    position: absolute;
+    bottom: 0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
