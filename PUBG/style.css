@@ -22,11 +22,19 @@ body{
 #main{
     width: 100%;
     height: 100vh;
-    background-image: url(../PUBG/img/main2.png);
+    background-image: url(../PUBG/img/main3.png);
     background-size: cover;
     background-position: 50% 50%;
     transform: translate(-50% -50%);
     position: relative;
+}
+#flame{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    mix-blend-mode: screen;
+    user-select: none;
+    pointer-events: none;
 }
 #nav-top{
     padding: 30px 100px;
@@ -50,24 +58,18 @@ body{
 #nav-side{
     padding-left: 100px;
 }
-#nav-side ul{
-    color:white;
-    padding: 0;
-    font-size: 23px;
+.menu-box{
+    margin: 15px 0;
 }
-#nav-side li{
-    padding: 10px 0;
-    list-style: none;
-}
-
-#nav-side a{
-    text-decoration: none;
+.menu-heading{
     color: white;
+    font-size: 20px;
     font-weight: bold;
     transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
+    cursor: pointer;
 }
-#nav-side a:hover{
+.menu-heading:hover{
     background: #55ffaa;
     background: -webkit-linear-gradient(left, var(--strong-color), var(--point-color), var(--light-color));
     /* background:    -moz-linear-gradient(right, #55ff55, #55ffff);
@@ -81,6 +83,19 @@ body{
     transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
 }
+.sub-menu-box{
+    margin: 0;
+    padding:0px 0 10px 20px;
+}
+.sub-menu{
+    list-style: none;
+    color:rgb(255,255,255,0.5);
+    font-size: 14px;
+    cursor: pointer;
+}
+
+
+
 
 #center_tx{
     position: absolute;
@@ -118,7 +133,9 @@ body{
     right: 100px;
     bottom:130px;
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
+
 #playnow-in{
     width: 240px;
     height:80px;
@@ -138,7 +155,6 @@ body{
             background-clip: text;
 }
 
-
 #arrowbox{
     width: 100vw;
     height: 85px;
@@ -149,4 +165,20 @@ body{
     justify-content: center;
     align-items: center;
 }
+#arrowbox p{
+    position: absolute;
+    left: 100px;
+    bottom:18px;
+    color: gray;
+    font-weight: lighter;
+}
+
+
 /* --------------------------------------- */
+
+
+/* -------------------mobile-------------------- */
+@media screen and (min-width: 769px) {
+    /* 데스크탑에서 사용될 스타일을 여기에 작성합니다. */
+ }
+ 
