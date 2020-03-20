@@ -1,0 +1,84 @@
+/* -------------------- weapon --------------------- */
+#weapon{
+    width: 100vw;
+    height: 450px;
+    background: linear-gradient(135deg, var(--weapon-deep-black) 40%, var(--weapon-deep-blue));
+    position: relative;
+}
+#weapon-in{
+    width: 1100px;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+.AR{
+    position: absolute;
+    width: 100%;
+    padding: 0 10%;
+    box-sizing: border-box;
+    top: 50%;
+    overflow: hidden;
+}
+
+.weapon-slide{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+.weapon-img, .weapon-img img{
+    width: 300px;
+}
+.weapon-img img{
+    transform: rotate(-15deg);
+}
+.slide-tx{
+    width:500px;
+    color: white;
+}
+.slide-tx h4{
+    font-size: 50px;
+    font-weight: normal;
+    font-family: var(--point-font);
+    margin:0;
+}
+/* waepon nav */
+#weapon-type-box{
+    width: 60%;
+    display:flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+}
+#weapon-type-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    width:100%;
+}
+#weapon-type-nav li{
+    
+    font-family: var(--point-font);
+    font-size: 28px;
+    color: white;
+    list-style: none;
+    cursor: pointer;
+}
+#prev, #nex{
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#prev{
+    left: 10%;
+}
+#nex{
+    right: 10%;
+}

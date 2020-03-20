@@ -317,86 +317,6 @@ body{
 }
 /* ----------------------------------------- */
 
-/* -------------------- weapon --------------------- */
-#weapon{
-    height: 450px;
-    padding-top: 30px;
-    background: linear-gradient(135deg, var(--weapon-deep-black) 40%, var(--weapon-deep-blue));
-    position: relative;
-}
-#weapon-in{
-    width: 1280px;
-    margin: 0 auto;
-    position: relative;
-}
-
-#weapon-content-area{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.weapon-slide{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-}
-.weapon-img, .weapon-img img{
-    width: 300px;
-}
-.weapon-img img{
-    transform: rotate(-15deg);
-}
-.slide-tx{
-    width:500px;
-    color: white;
-}
-.slide-tx h4{
-    font-size: 50px;
-    font-weight: normal;
-    font-family: var(--point-font);
-    margin:0;
-}
-/* waepon nav */
-#weapon-type-box{
-    width: 1280px;
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translate(-50%);
-}
-#weapon-type-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
-}
-#weapon-type-nav li{
-    font-family: var(--point-font);
-    font-size: 28px;
-    color: white;
-    list-style: none;
-    cursor: pointer;
-}
-#prev{
-    position:absolute;
-    left:0;
-    top: 30%;
-    cursor:pointer;
-}
-#nex{
-    position:absolute;
-    right:0;
-    top: 30%;
-    cursor:pointer;
-}
-
-
-
-
-
 
 
 
@@ -428,6 +348,7 @@ body{
 }
 
 /* -------------------mobile---- ---------------- */
+
 @media screen and (min-width: 769px) {
     /* 데스크탑에서 사용될 스타일을 여기에 작성합니다. */
  }
