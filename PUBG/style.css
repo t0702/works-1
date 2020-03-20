@@ -58,12 +58,13 @@ body{
 #nav-side{
     padding-left: 100px;
 }
-.menu-box{
+.menu-area{
     margin: 15px 0;
+    display: block;
 }
 .menu-heading{
     color: white;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: bold;
     transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
@@ -83,14 +84,16 @@ body{
     transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
 }
-.sub-menu-box{
+.list-area{
+    display: none;
     margin: 0;
     padding:0px 0 10px 20px;
+
 }
 .sub-menu{
     list-style: none;
     color:rgb(255,255,255,0.5);
-    font-size: 14px;
+    font-size: 15px;
     cursor: pointer;
 }
 

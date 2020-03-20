@@ -33,3 +33,4 @@ btnCollapse.addEventListener('click', function(){
         answer[i].style.display = 'none';
     }
 });
+
