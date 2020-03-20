@@ -10,18 +10,19 @@ for(var i = 0; i <heading.length; i++){
             e.target.parentNode.classList.add('active');
             activelist(); 
         }
+        
     })
 }
+
+
 
 function activelist(){
     for(var x = 0; x < listArea.length; x++){
         listArea[x].style.display = 'none';
     }
-    var activePanel = document.querySelector('.menu-area.active .list-area'); //querySelector : css선택자
+    const activePanel = document.querySelector('.menu-area.active .list-area'); //querySelector : css선택자
     activePanel.style.display = "block";
 }
-
-
     
 
 

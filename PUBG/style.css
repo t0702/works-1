@@ -1,12 +1,17 @@
 
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&display=swap&subset=korean');
 /* font-family: 'Noto Sans KR', sans-serif; */
+@import url('https://fonts.googleapis.com/css?family=Teko:300,400,500,600,700&display=swap&subset=devanagari,latin-ext');
+/* font-family: 'Teko', sans-serif; */
 
 :root{
     --main-color: #131313;
     --point-color: #f2a900;
     --strong-color: #ff8a00;
     --light-color: #f6ce68;
+    --point-font: 'Teko', sans-serif;
+    --weapon-deep-blue: #373853;
+    --weapon-deep-black: #161616;
 }
 #Element{
     margin: 0 auto;
@@ -21,17 +26,19 @@ body{
 /* -------------------main--------------------- */
 #main{
     width: 100%;
-    height: 100vh;
+    height: 750px;
     background-image: url(../PUBG/img/main3.png);
     background-size: cover;
-    background-position: 50% 50%;
+    background-position: top;
     transform: translate(-50% -50%);
     position: relative;
+    box-shadow: 0 -10px 80px var(--point-color);
+    z-index: 1;
 }
 #flame{
     position: absolute;
     width: 100%;
-    height: 100vh;
+    height: 750px;
     mix-blend-mode: screen;
     user-select: none;
     pointer-events: none;
@@ -71,7 +78,7 @@ body{
     cursor: pointer;
 }
 .menu-heading:hover{
-    background: #55ffaa;
+    background: var(--point-color);
     background: -webkit-linear-gradient(left, var(--strong-color), var(--point-color), var(--light-color));
     /* background:    -moz-linear-gradient(right, #55ff55, #55ffff);
     background:      -o-linear-gradient(right, #55ff55, #55ffff);
@@ -134,7 +141,7 @@ body{
     border-image-slice: 1;
     position: absolute;
     right: 100px;
-    bottom:130px;
+    bottom:50px;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
 }
@@ -161,7 +168,7 @@ body{
 #arrowbox{
     width: 100vw;
     height: 85px;
-    background-color: rgb(22,22,22,0.5);
+    /* background-color: rgb(22,22,22,0.5); */
     position: absolute;
     bottom: 0;
     display:flex;
@@ -172,15 +179,255 @@ body{
     position: absolute;
     left: 100px;
     bottom:18px;
-    color: gray;
+    color: white;
     font-weight: lighter;
 }
 
-
 /* --------------------------------------- */
 
+/* -------------------update-------------------- */
+#update{
+    height: 500px;
+    background-image: url(../PUBG/img/up-flame.png);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 180px 180px 100px;
+}
+#up-in{
+    margin: 0 auto;
+    width: 1080px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+#tx-area{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+#tx-area h2{
+    font-size: 80px;
+    line-height: 1em;
+    margin:0;
+    margin-bottom:40px;
+    color: transparent;
+    background: var(--main-color);
+    background: -webkit-linear-gradient(left, var(--strong-color), var(--light-color), var(--strong-color));
+    -webkit-background-clip: text;
+            background-clip: text;
+}
+#tx-area span{
+    color: var(--point-color);
+    margin-top:10px;
+}
+#detail{
+    width: 160px;
+    height: 45px;
+    border: 1px solid white;
+    text-align: center;
+    padding-top:20px;
+    margin-top:20px;
+    cursor: pointer;
+}
+#up-banner{
+    height: 250px;
+    width: 600px;
+    background-color: var(--main-color);
+    background-image: url(../PUBG/img/TeamBattle.png);
+    background-size:cover;
+    background-position: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#up-banner span{
+    color: var(--point-color);
+    font-size: 30px;
+}
+#up-banner p{
+    color: white;
+}
+#gun{
+    position: absolute;
+    width:200px;
+    left: 500px;
+    top:380px;
+    pointer-events: none;
+}
+/* --------------------------------------- */
 
-/* -------------------mobile-------------------- */
+/* -------------------path notes-------------------- */
+#patchnotes{
+    width: 1280px;
+    height: 300px;
+    margin: 0 auto;  
+    position: relative;
+}
+#thumb-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -100px;
+}
+.thumb{
+    width: 320px;
+    height: 320px;
+    background-color: black;
+}
+#thumb-title{
+    background: linear-gradient(135deg, var(--strong-color), var(--point-color), var(--light-color));
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#thumb-title p{
+    color:white;
+    font-size: 30px;
+    font-weight: bold;
+}
+#pn-arrow{
+    cursor: pointer;
+}
+#thumb-1{
+    background-image: url('../PUBG/img/pn_pic1.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: inset 0 0 30px rgb(0, 0, 0,0.5);
+}
+#thumb-2{
+    background-image: url('../PUBG/img/pn_pic2.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: inset 0 0 30px rgb(0, 0, 0,0.5);
+}
+#thumb-3{
+    background-image: url('../PUBG/img/pn_pic3.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: inset 0 0 30px rgb(0, 0, 0,0.5);
+}
+/* ----------------------------------------- */
+
+/* -------------------- weapon --------------------- */
+#weapon{
+    height: 450px;
+    padding-top: 30px;
+    background: linear-gradient(135deg, var(--weapon-deep-black) 40%, var(--weapon-deep-blue));
+    position: relative;
+}
+#weapon-in{
+    width: 1280px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#weapon-content-area{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weapon-slide{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.weapon-img, .weapon-img img{
+    width: 300px;
+}
+.weapon-img img{
+    transform: rotate(-15deg);
+}
+.slide-tx{
+    width:500px;
+    color: white;
+}
+.slide-tx h4{
+    font-size: 50px;
+    font-weight: normal;
+    font-family: var(--point-font);
+    margin:0;
+}
+/* waepon nav */
+#weapon-type-box{
+    width: 1280px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+}
+#weapon-type-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+#weapon-type-nav li{
+    font-family: var(--point-font);
+    font-size: 28px;
+    color: white;
+    list-style: none;
+    cursor: pointer;
+}
+#prev{
+    position:absolute;
+    left:0;
+    top: 30%;
+    cursor:pointer;
+}
+#nex{
+    position:absolute;
+    right:0;
+    top: 30%;
+    cursor:pointer;
+}
+
+
+
+
+
+
+
+
+/* ------------------- news ---- ---------------- */
+
+#news{
+    width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+#notice{
+    width:500px;
+}
+#contest{
+    width: 400px;
+}
+.news-heading h3{
+    color: var(--point-color);
+    margin: 0;
+}
+.news-heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+}
+
+/* -------------------mobile---- ---------------- */
 @media screen and (min-width: 769px) {
     /* 데스크탑에서 사용될 스타일을 여기에 작성합니다. */
  }
