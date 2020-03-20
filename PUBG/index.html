@@ -7,7 +7,8 @@
     <title>PLAYERKNOWN'S BATTLEGROUNDS</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="weapon-area.css">
-    <script defer src="script.js"></script>
+    <script defer src="accordion.js"></script>
+    <script defer src="weapon.js"></script>
 </head>
 <body>
     <div id="Element">
@@ -137,43 +138,390 @@
             </div>
             <div id="nex">
                 <img style="width:120px; " src="img/next.png"/>
-            </div> -->
+            </div>
 
             <div id="weapon-in">
                 <div class="weapon-wrap">
-                    
-                    <div class="AR">
-                        <div class="slider-container">
-                            <div class = "weapon-slide">
-                                <div class="slide-tx">
-                                    <h4>AKM</h4>
-                                    <span>7.62nm/30 [max40]</span>
-                                    <p>총기 애호가가 아니더라도 누구든 한 번쯤은 들어봤을 법한 AK-47
-                                        돌격 소총을 현대식으로 개량한 총기. 그대 이 총기는 의심치 말지어다.
-                                    </p>
-                                </div>
-                                <div class="weapon-img">
-                                    <img src="img/weapon/AR/ar_akm.4441bb1a.png"/>
-                                </div>
-                            </div>
 
-                            <div class = "weapon-slide">
-                                <div class="slide-tx">
-                                    <h4>AUG A3</h4>
-                                    <span>5.56mm/30 [max 40]</span>
-                                    <p>Steyr AUG로도 알려져있는 오리지널 AUG A1의 세 번쨰 개량 버전.
-                                       1960년대에 오스트라이에서 디자인 된 불법 현대식 돌격소총.
-                                    </p>
-                                </div>
-                                <div class="weapon-img">
-                                    <img src="img/weapon/AR/ar_aug.c31a91c2.png"/>
-                                </div>
+                    <div class="slider-container" id="AR">
+                        <div class = "AR-slider">
+                            <div class="slide-tx">
+                                <h4>AKM</h4>
+                                <span>7.62nm/30 [max40]</span>
+                                <p>총기 애호가가 아니더라도 누구든 한 번쯤은 들어봤을 법한 AK-47
+                                    돌격 소총을 현대식으로 개량한 총기. 그대 이 총기는 의심치 말지어다.
+                                </p>
                             </div>
-
+                            <div class="weapon-img">
+                                <img src="img/weapon/AR/ar_akm.4441bb1a.png"/>
+                            </div>
                         </div>
-                    </div>
 
-                </div>
+                        <div class = "AR-slider">
+                            <div class="slide-tx">
+                                <h4>AUG A3</h4>
+                                <span>5.56mm/30 [max 40]</span>
+                                <p>Steyr AUG로도 알려져있는 오리지널 AUG A1의 세 번쨰 개량 버전.
+                                    1960년대에 오스트라이에서 디자인 된 불법 현대식 돌격소총.
+                                </p>
+                            </div>
+                            <div class="weapon-img">
+                                <img src="img/weapon/AR/ar_aug.c31a91c2.png"/>
+                            </div>
+                        </div>
+                        
+                        <div class = "AR-slider">
+                            <div class="slide-tx">
+                                <h4>Groza</h4>
+                                <span>7.62mm/30 [max 40]</span>
+                                <p>
+                                    러시아에서 1990년대에 개발된 총기로, 러시아어로는 천둥번개를 뜻한다고 한다. 갓로자 찬양해!
+                                </p>
+                            </div>
+                            <div class="weapon-img">
+                                <img src="img/weapon/AR/ar_groza.94253706.png"/>
+                            </div>
+                        </div>
+                            
+                        <div class = "AR-slider">
+                            <div class="slide-tx">
+                                <h4>M16A4</h4>
+                                <span>5.56mm/30 [max 40]</span>
+                                <p>
+                                    베트남 전쟁 당시에 미군이 사용한 돌격소총. 현재는 훈련 목적으로 많이 운용된다. 대한민국 군필자라면 누구나…
+                                </p>
+                            </div>
+                            <div class="weapon-img">
+                                <img src="img/weapon/AR/ar_m16a4.75b2e69d.png"/>
+                            </div>
+                        </div>
+
+                        <div class = "AR-slider">
+                            <div class="slide-tx">
+                                <h4>M416</h4>
+                                <span>5.56mm/30 [max 40]</span>
+                                <p>
+                                    미군이 애용하는 돌격소총. M16과 M4 카빈에서 개량된 모델이다.
+                                </p>
+                            </div>
+                            <div class="weapon-img">
+                                <img src="img/weapon/AR/ar_m16a4.75b2e69d.png"/>
+                            </div>
+                        </div>
+
+                        <div class = "AR-slider">
+                            <div class="slide-tx">
+                                <h4>Scar-L</h4>
+                                <span>5.56mm/30 [max 40]</span>
+                                <p>
+                                    벨기에에서 생산된 현대식 돌격소총 FN SCAR 시리즈 중 하나. 이름 마주친 적들에게 무지막지한 상처를 남긴다는 의미로도 통한다.
+                                </p>
+                            </div>
+                            <div class="weapon-img">
+                                <img src="img/weapon/AR/ar_m16a4.75b2e69d.png"/>
+                            </div>
+                        </div>
+
+                    </div> <!---------------------- AR end!!!!! ---------------------->
+                    
+                    <div class="slider-container" id="SR">
+                        <div class = "slider">
+                            <div class="slide-tx">
+                                <h4>AWM</h4>
+                                <span>300magnum/5 [max7]</span>
+                                <p>
+                                    매우 강력한 영국제 저격소총. Arctic Warfare Magnum의 약자로, 이름처럼 혹한 지역에서도 안정적인 작동을 보장한다.
+                                </p>
+                            </div>
+                            <div class="weapon-img">
+                                <img src="img/weapon/SR/sr_awm.a543c81f.png"/>
+                            </div>
+                        </div>
+
+                        <div class = "slider">
+                            <div class="slide-tx">
+                                <h4>Kar98k</h4>
+                                <span>7.62mm/5 [no max]</span>
+                                <p>
+                                    1933년 독일에서 탄생한 저격소총. 지금까지도 일부 지역에서는 현역으로 사용되고있다.
+                                </p>
+                            </div>
+                            <div class="weapon-img">
+                                <img src="img/weapon/SR/sr_kar98k.eee0c968.png"/>
+                            </div>
+                        </div>
+
+                        <div class = "slider">
+                            <div class="slide-tx">
+                                <h4>M24</h4>
+                                <span>7.62mm/5 [max7]</span>
+                                <p>
+                                    미국의 표현제식 저격소총.
+                                </p>
+                            </div>
+                            <div class="weapon-img">
+                                <img src="img/weapon/SR/sr_m24.67b18254.png"/>
+                            </div>
+                        </div>
+
+                        <div class = "slider">
+                            <div class="slide-tx">
+                                <h4>Win94</h4>
+                                <span>.4 ACP/8 [no max]</span>
+                                <p>
+                                    1988년 미국에서 탄생한 레버액션 소총. 서부영화 매니아라면 자동으로 손이 갈것이다.
+                                </p>
+                            </div>
+                            <div class="weapon-img">
+                                <img src="img/weapon/SR/sr_win94.92a03872.png"/>
+                            </div>
+                        </div>
+
+                    </div> <!---------------------- SR end!!!!! ---------------------->
+                   
+                    <div class="slider-container" id="DMR">
+                        <div class = "slider">
+                            <div class="slide-tx">
+                                <h4>Mini14</h4>
+                                <span>5.56mm/20 [max30]</span>
+                                <p>
+                                    가벼운 미제 지정사수소총. 이름은 Mini인데 화력은 정반대라구!
+                                </p>
+                            </div>
+                            <div class="weapon-img">
+                                <img src="img/weapon/DMR/dmr_sks.cc5d5cd9.png"/>
+                            </div>
+                        </div>
+
+                        <div class = "slider">
+                            <div class="slide-tx">
+                                <h4>SKS</h4>
+                                <span>7.62mm/10 [max20]</span>
+                                <p>
+                                    1925년에 소련에서 생산된 반자동 카빈 지정사수소총이다.
+                                </p>
+                            </div>
+                            <div class="weapon-img">
+                                <img src="img/weapon/DMR/dmr_sks.cc5d5cd9.png"/>
+                            </div>
+                        </div>
+
+                        <div class = "slider">
+                            <div class="slide-tx">
+                                <h4>VSS</h4>
+                                <span>9mm/10 [max20]</span>
+                                <p>
+                                    소련에서 탄생한 특수목적 저격소총. 고성능의 소음기가 내장되어있다.
+                                </p>
+                            </div>
+                            <div class="weapon-img">
+                                <img src="img/weapon/DMR/dmr_vss.2dad5921.png"/>
+                            </div>
+                        </div>
+                    </div> <!---------------------- DMR end!!!!! ---------------------->
+
+                    <div class="slider-container" id="SG">
+                        <div class = "slider">
+                            <div class="slide-tx">
+                                <h4>S12K</h4>
+                                <span>12 Gauge/5 [max8]</span>
+                                <p>
+                                    러시아제 신식 반자동 샷건.
+                                </p>
+                            </div>
+                            <div class="weapon-img">
+                                <img src="img/weapon/SG/sg_s12k.fb2d2612.png"/>
+                            </div>
+                        </div>
+
+                        <div class = "slider">
+                            <div class="slide-tx">
+                                <h4>S1897</h4>
+                                <span>12 Gauge/5 [no max]</span>
+                                <p>
+                                    1890년대 미국에서 탄생한 클래식한 펌프액션 샷건.
+                                </p>
+                            </div>
+                            <div class="weapon-img">
+                                <img src="img/weapon/SG/sg_s1897.fba389a6.png"/>
+                            </div>
+                        </div>
+
+                        <div class = "slider">
+                            <div class="slide-tx">
+                                <h4>S686</h4>
+                                <span>12 Gauge/2 [no max]</span>
+                                <p>
+                                    더블 배럴 샷건. 미국에서 사격 스포츠 용도로 사용된다.
+                                </p>
+                            </div>
+                            <div class="weapon-img">
+                                <img src="img/weapon/SG/sg_s686.6e646eba.png"/>
+                            </div>
+                        </div>
+                    </div> <!---------------------- SG end!!!!! ---------------------->
+
+                    <div class="slider-container" id="OTHERS">
+                        <div class = "slider">
+                            <div class="slide-tx">
+                                <h4>Crossbow</h4>
+                                <span>Bolt/1[no max]</span>
+                                <p>
+                                    주로 스포츠 용도로 사용되는 석궁. 하지만 현대 전투전에서도 효과적일 수 있다.
+                                </p>
+                            </div>
+                            <div class="weapon-img">
+                                <img src="img/weapon/OTHERS/other_crossbow.ed10f9df.png"/>
+                            </div>
+                        </div>
+
+                        <div class = "slider">
+                            <div class="slide-tx">
+                                <h4>DP-28</h4>
+                                <span>7.62.mm/47[no max]</span>
+                                <p>
+                                    2차 세계대전 당시 소련에서 사용한 경기관총. 현대에서는 보기 드물다.
+                                </p>
+                            </div>
+                            <div class="weapon-img">
+                                <img src="img/weapon/OTHERS/other_dp-28.244705aa.png"/>
+                            </div>
+                        </div>
+
+                        <div class = "slider">
+                            <div class="slide-tx">
+                                <h4>M249</h4>
+                                <span>5.56mm/100 [no max]</span>
+                                <p>
+                                    미군에서 애용하는 경기관총.
+                                </p>
+                            </div>
+                            <div class="weapon-img">
+                                <img src="img/weapon/OTHERS/other_m249.918846e5.png"/>
+                            </div>
+                        </div>
+                    </div> <!---------------------- OTHERS end!!!!! ---------------------->
+
+                    <div class="slider-container" id="SMG">
+                        <div class = "slider">
+                            <div class="slide-tx">
+                                <h4>Micro UZI</h4>
+                                <span>9mm/25 [max35]</span>
+                                <p>
+                                    근접전에 특화된 이스라엘제 기관단총.
+                                </p>
+                            </div>
+                            <div class="weapon-img">
+                                <img src="img/weapon/SMG/smg_microuzi.268601b1.png"/>
+                            </div>
+                        </div>
+
+                        <div class = "slider">
+                            <div class="slide-tx">
+                                <h4>Tommy Gun</h4>
+                                <span>.45 ACP/30 [max50]</span>
+                                <p>
+                                    미국에서 개발되어 애용된 기관단총. 톰슨 기관단총의 애칭이다.
+                                </p>
+                            </div>
+                            <div class="weapon-img">
+                                <img src="img/weapon/SMG/smg_tommygun.632ec534.png"/>
+                            </div>
+                        </div>
+                        
+                        <div class = "slider">
+                            <div class="slide-tx">
+                                <h4>Vector</h4>
+                                <span>9mm/19 [max33]</span>
+                                <p>
+                                    2006년 미국에서 출시된 현대식 기관단총.
+                                </p>
+                            </div>
+                            <div class="weapon-img">
+                                <img src="img/weapon/SMG/smg_vector.f5a6cb68.png"/>
+                            </div>
+                        </div>
+                    </div> <!---------------------- SMG end!!!!! ---------------------->
+
+                    <div class="slider-container" id="SIDEARM">
+                        <div class = "slider">
+                            <div class="slide-tx">
+                                <h4>Skorpion</h4>
+                                <span>9mm/20 [max 40]</span>
+                                <p>
+                                    연사가 가능한 체코슬로바키아제 자동권총.
+                                </p>
+                            </div>
+                            <div class="weapon-img">
+                                <img src="img/weapon/SIDEARM/sidearm_skorpion.716a0533.png"/>
+                            </div>
+                        </div>
+
+                        <div class = "slider">
+                            <div class="slide-tx">
+                                <h4>Sawed-off</h4>
+                                <span>12 Gauge/2 [no max]</span>
+                                <p>
+                                    짧은 배럴을 가진 중절식 쌍열 샷건.
+                                </p>
+                            </div>
+                            <div class="weapon-img">
+                                <img src="img/weapon/SIDEARM/sidearm_sawed-off.3d25fcb6.png"/>
+                            </div>
+                        </div>
+                    </div><!---------------------- SIDEARM end!!!!! ---------------------->
+
+                    <div class="slider-container" id="MELEE">
+                        <div class = "slider">
+                            <div class="slide-tx">
+                                <h4>Sickle</h4>
+                                <p>
+                                    풀을 배거나 수확할 때 필요한 도구이지만, 드물게 사람을 수확하는데에도 사용된다고 한다.
+                                </p>
+                            </div>
+                            <div class="weapon-img">
+                                <img src="img/weapon/MELEE/melee_sickle.73567b5a.png"/>
+                            </div>
+                        </div>
+
+                        <div class = "slider">
+                            <div class="slide-tx">
+                                <h4>Pan</h4>
+                                <p>
+                                    요리에 꼭 필요한 조리기구이지만, 의외로 전장에서 찾는 사람이 많다고한다. 프라이팬으로 총알을 막을 수 있다면 믿겠는가?
+                                </p>
+                            </div>
+                            <div class="weapon-img">
+                                <img src="img/weapon/MELEE/melee_pan.a4140867.png"/>
+                            </div>
+                        </div>
+
+                        <div class = "slider">
+                            <div class="slide-tx">
+                                <h4>Crowbar</h4>
+                                <p>
+                                    문을 부수는 용도로 특화되어 있지만, 간확 사람을 부수는 용도로도 사용된다고 한다.
+                                </p>
+                            </div>
+                            <div class="weapon-img">
+                                <img src="img/weapon/MELEE/melee_crowbar.371ad5f9.png"/>
+                            </div>
+                        </div>
+
+                        <div class = "slider">
+                            <div class="slide-tx">
+                                <h4>Machete</h4>
+                                <span>12 Gauge/2 [no max]</span>
+                                <p>
+                                    정글에서 나무덩굴 등을 베는데 특화되어있지만, 의오로 사람을 베는 용도로도 자주 사용된다고 한다.
+                                </p>
+                            </div>
+                            <div class="weapon-img">
+                                <img src="img/weapon/MELEE/melee_machete.30c9fb20.png"/>
+                            </div>
+                        </div>
+                    </div><!---------------------- SIDEARM end!!!!! ---------------------->
+                </div> <!--weapon-wrap-->
                 
             </div>
 
