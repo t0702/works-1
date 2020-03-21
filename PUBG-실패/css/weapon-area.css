@@ -39,7 +39,9 @@
 
 
 /* ----------!!!!!!무기종류 slider!!!!!!---------- */
-
+#AR, #SR, #DMR, #SG, #OTHERS, #SMG, #SIDEARM, #MELEE{
+    /* display:none; */
+}
 .AR-slider{
     width: 100vw;
     padding: 0 150px;
