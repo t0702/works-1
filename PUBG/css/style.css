@@ -27,7 +27,7 @@ body{
 #main{
     width: 100%;
     height: 750px;
-    background-image: url(../PUBG/img/main3.png);
+    background-image: url(../img/main3.png);
     background-size: cover;
     background-position: top;
     transform: translate(-50% -50%);
@@ -63,6 +63,7 @@ body{
 #logo, #logo img{ width: 70px;}
 
 #nav-side{
+    width: 200px;
     padding-left: 100px;
 }
 .menu-area{
@@ -188,7 +189,7 @@ body{
 /* -------------------update-------------------- */
 #update{
     height: 500px;
-    background-image: url(../PUBG/img/up-flame.png);
+    background-image: url(../img/up-flame.png);
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
@@ -196,8 +197,12 @@ body{
     padding: 180px 180px 100px;
 }
 #up-in{
+    max-width:1080px;
     margin: 0 auto;
-    width: 1080px;
+    
+}
+#up-wrap{
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -206,6 +211,7 @@ body{
     display: flex;
     flex-direction: column;
     color: white;
+    position: relative;
 }
 #tx-area h2{
     font-size: 80px;
@@ -235,7 +241,7 @@ body{
     height: 250px;
     width: 600px;
     background-color: var(--main-color);
-    background-image: url(../PUBG/img/TeamBattle.png);
+    background-image: url(../img/TeamBattle.png);
     background-size:cover;
     background-position: center;
     text-align: center;
@@ -253,101 +259,285 @@ body{
 #gun{
     position: absolute;
     width:200px;
-    left: 500px;
-    top:380px;
+    left:60%;
+    bottom:-10%;
     pointer-events: none;
 }
 /* --------------------------------------- */
 
 /* -------------------path notes-------------------- */
 #patchnotes{
-    width: 1280px;
-    height: 300px;
+    padding: 50px 0 50px 0;
+    max-width:1200px;
     margin: 0 auto;  
     position: relative;
 }
 #thumb-box{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: -100px;
 }
-.thumb{
-    width: 320px;
-    height: 320px;
-    background-color: black;
+#thumb-1{
+    display: flex;
 }
-#thumb-title{
+#thumb-2{
+    display: flex;
+}
+#thumb-1:after, #thumb-2:after{
+    padding-bottom:100%;
+}
+
+.thumb, .thumbImg{
+    width: 300px;
+    height: 300px;
+}
+
+#thumb-pannel{
     background: linear-gradient(135deg, var(--strong-color), var(--point-color), var(--light-color));
+    text-align: center;
     display:flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    text-align: center;
+    
 }
-#thumb-title p{
+
+#thumb-pannel p{
     color:white;
     font-size: 30px;
     font-weight: bold;
+    box-sizing: border-box;
+    filter: drop-shadow( 0 0 5px rgb(0, 0, 0,0.5));
+    
 }
+
 #pn-arrow{
     cursor: pointer;
+    filter: drop-shadow( 0 0 3px rgb(0, 0, 0,0.5));
 }
-#thumb-1{
-    background-image: url('../PUBG/img/pn_pic1.png');
+/* #thumb-1{
+    background-image: url('../img/pn_pic1.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     box-shadow: inset 0 0 30px rgb(0, 0, 0,0.5);
 }
 #thumb-2{
-    background-image: url('../PUBG/img/pn_pic2.png');
+    background-image: url('../img/pn_pic2.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     box-shadow: inset 0 0 30px rgb(0, 0, 0,0.5);
 }
 #thumb-3{
-    background-image: url('../PUBG/img/pn_pic3.png');
+    background-image: url('../img/pn_pic3.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     box-shadow: inset 0 0 30px rgb(0, 0, 0,0.5);
-}
+} */
 /* ----------------------------------------- */
-
-
-
 
 /* ------------------- news ---- ---------------- */
 
-#news{
-    width: 1080px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-}
-#notice{
-    width:500px;
-}
-#contest{
-    width: 400px;
-}
-.news-heading h3{
-    color: var(--point-color);
-    margin: 0;
+#news-area{
+    padding: 50px 0;
+    display:flex;
+    justify-content: center;
+    margin: 0 50px;
 }
 .news-heading{
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 10px;
-    border-bottom: 1px solid black;
-    padding-bottom: 10px;
+    margin-right: 20px;
+    /* background: linear-gradient(to right, var(--point-color), var(--light-color)); */
+
+}
+#news-area h4{
+    margin:0;
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--main-color);
+    padding-left: 15px;
+    font-family: var(--point-font);
 }
 
-/* -------------------mobile---- ---------------- */
+.news-heading span{
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--main-color);
+    cursor: pointer;
+    padding-right: 15px;
+}
+.news-heading span:hover{
+    color: var(--strong-color);
+}
+#notice-wrap hr, #contest-wrap hr{
+    width: 100%;
+    height:  1px;
+    background-color: var(--main-color);
+}
+#news-wrap{
+    max-width: 960px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+#notice-wrap{
+    max-width: 500px;
+    width: 100%;
+    /* border-bottom: 1px solid gray; */
+}
+#contest-wrap{
+    max-width: 400px;
+    width: 100%;
+    margin-left:50px;
+    /* border-bottom:1px solid gray; */
+}
+
+#notice-list{
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+}
+
+#notice-title{
+    margin-left: 15px;
+    width:100%;
+}
+#notice-title li{
+    width:100%;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+}
+#notice-title li:nth-child(1){margin-top: 0;}
+#notice-title li:nth-last-child(){margin-bottom: 0;}
+#notice-title li:hover{
+    cursor: pointer;
+    color: var(--strong-color);
+}
+
+
+#notice-date{
+    margin-right: 15px;
+    color: gray;
+}
+
+#notice-title ul, #notice-date ul{
+    padding: 0;
+}
+#notice-title li, #notice-date li{
+    margin: 15px 0;
+    list-style: none;
+}
+
+
+.contest-img, .contest-img img{
+    width: 100%;
+    height: 100%;
+}
+.contest-img{
+    padding-top:15px;
+    cursor:pointer;
+}
+.contest:after{
+    padding-bottom: 100%;
+}
+
+/* ------------------- marketing -------------------- */
+#marketing{
+    width: 100%;
+    height: 400px;
+    background-image: url(../img/palybanner.png);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#marketing-wrap{
+    max-width:1080px;
+    margin: 0 auto;
+    width:100%;
+    height:400px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    
+}
+#marketing-tx{
+    text-align: center;
+    color: white;
+    max-width:500px;
+    padding-right:30px;
+    padding-left:30px;
+}
+#marketing span{ font-size: 30px; font-weight: bold; margin-bottom:10px;}
+#marketing p{line-height: 2em; margin:0;}
+
+#marketing-img{
+    margin-top: 40px;
+    width:100%;
+    max-width: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 30px;
+    margin-right: 30px;
+}
+#marketing-img img{
+    width: 120px;
+}
+
+/* ------------------- marketing END!!!------------------- */
+
+#footer{
+    background-color: var(--main-color);
+    padding: 100px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 12px;
+    color: gray;
+}
+#footer-logo, #footer-logo img{
+    width:100px;
+}
+#footer-logo{
+    margin-bottom: 30px;
+}
+#footer ul{
+    padding:0;
+    display: flex;
+    justify-content: flex-end;
+}
+#footer li{
+    list-style: none;
+    padding: 0 10px;
+}
+#footer li:nth-child(1){ color: white; font-weight: bold;}
+#footer li:hover{
+    color: var(--strong-color);
+}
+#limit{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+#limit div{
+    padding: 0 10px;
+}
+#limit div, #limit img{
+    height: 80px;
+}
+
+
+
+/* -------------------mobile-------------------- */
 
 @media screen and (min-width: 769px) {
     /* 데스크탑에서 사용될 스타일을 여기에 작성합니다. */

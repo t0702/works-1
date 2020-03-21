@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>PLAYERKNOWN'S BATTLEGROUNDS</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="weapon-area.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/weapon-area.css">
+
     <script defer src="js/accordion.js"></script>
+
     <script defer src="js/AR-slider.js"></script>
     <script defer src="js/SR-slider.js"></script>
     <script defer src="js/DMR-slider.js"></script>
@@ -19,14 +21,14 @@
     
 </head>
 <body>
-    <div id="Element">
+    <footer id="Element">
 
         <div id="main">
-            <img id="flame" src="img/flame_particle.gif"/>
+            <img id="flame" src="img/flame_particle.gif" alt="flame-particle"/>
             <nav id="nav-top">
                 
                 <div id="logo">
-                    <img src="img/m_logo.png"/>
+                    <img src="img/m_logo.png" alt="main-logo"/>
                 </div>
                 <ul>
                     <li>MY ACCOUNT</li>
@@ -69,7 +71,7 @@
                         <li class="sub-menu">보안센터</li>
                     </ul>
                 </div>
-                <div class="menu-box">
+                <div class="menu-area">
                     <div class="menu-heading">STORE</div>
                     <ul class="list-area">
                         <li class="sub-menu">게임구매</li>
@@ -96,7 +98,7 @@
             <div id="arrowbox">
                 <p>PLAYERKNOWN'S BATTLEGROUND</p>
                 <div>
-                    <img style="width: 120px;" src="img/m_arrow.png"/>
+                    <img style="width: 120px;" src="img/m_arrow.png" alt="main-arrow"/>
                 </div>
             </div>
         </div>
@@ -104,48 +106,71 @@
         <!------------ 2.page - update ------------>
         <div id="update">
             <div id="up-in">
-                <div id="tx-area">
-                    <h2>UPDATE</h2>
-                    
-                    <p>[ SEASON 두번째 업데이트 ]</p>
-                    <span>KILL을 파밍하라!</span>
-                    <p>계속되는 전투! 죽음을 두려워하지 말라!</p>
-                    
-                    <div id="detail">자세히 보기</div>
+                <div id="up-wrap">
+                    <div id="tx-area">
+                        <h2>UPDATE</h2>
+                        
+                        <p>[ SEASON 두번째 업데이트 ]</p>
+                        <span>KILL을 파밍하라!</span>
+                        <p>계속되는 전투! 죽음을 두려워하지 말라!</p>
+                        
+                        <div id="detail">자세히 보기</div>
+                        <img id="gun" src="img/gun.png" alt="gun-img"/>
+                    </div>
+                    <div id="up-banner">
+                        <span>PUBG ARCADE</span>
+                        <p style="font-weight: bold; font-size: 40px; margin:0;">8 vs 8 팀 데스매치</p>
+                        <p>기존의 맵에서 선정된 7개 전장에서 펼쳐지는 8 대 8 전투!</p>
+                    </div>
                 </div>
-                <div id="up-banner">
-                    <span>PUBG ARCADE</span>
-                    <p style="font-weight: bold; font-size: 40px; margin:0;">8 vs 8 팀 데스매치</p>
-                    <p>기존의 맵에서 선정된 7개 전장에서 펼쳐지는 8 대 8 전투!</p>
-                </div>
-                <img id="gun" src="img/gun.png"/>
             </div>
         </div>
         
         <!------------ 3.page - pathno notes ------------>
         <div id="patchnotes">
             <div id="thumb-box">
-                <div class="thumb" id="thumb-title">
-                    <p>PATCH NOTES<br>패치노트</p>
-                    <div id="pn-arrow">
-                        <img src="img/pn_arrow.png"/>
+
+                <div id="thumb-1">
+
+                    <div  class = "thumb" id="thumb-pannel">
+                        
+                        <p>PATCH NOTES<br>패치노트</p>
+                        <div id="pn-arrow">
+                            <img src="img/pn_arrow.png" alt="pn-arrow"/>
+                        </div>
+                    
+                    </div>
+
+                    <div class="thumb">
+                        <img class="thumbImg"src="img/pn_pic1.png" alt="pn-thumb"/>
+                    </div>
+
+                </div>
+
+                <div id="thumb-2">
+                    <div class="thumb">
+                        <img class="thumbImg"src="img/pn_pic2.png" alt="pn-thumb"/>
+                    </div>
+                    <div class="thumb">
+                        <img class="thumbImg"src="img/pn_pic3.png" alt="pn-thumb"/>
                     </div>
                 </div>
-                <div class="thumb" id="thumb-1"></div>
-                <div class="thumb" id="thumb-2"></div>
-                <div class="thumb" id="thumb-3"></div>
             </div>
+
         </div>
 
         <!------------ 4.page - weapon ------------>
 
         <div id="weapon">
-            
-            <div id="prev">
-                <img style="width:120px; " src="img/prev.png"/>
-            </div>
-            <div id="nex">
-                <img style="width:120px; " src="img/next.png"/>
+            <div id="prev-nex-wrap">
+                <div id="prev-nex-in">
+                    <div id="prev">
+                        <img style="width:120px; " src="img/prev.png" alt="prev-btn"/>
+                    </div>
+                    <div id="nex">
+                        <img style="width:120px; " src="img/next.png" alt="next-btn"/>
+                    </div>
+                </div>
             </div>
 
             <div id="weapon-in">
@@ -161,7 +186,7 @@
                                 </p>
                             </div>
                             <div class="weapon-img">
-                                <img src="img/weapon/AR/ar_akm.4441bb1a.png"/>
+                                <img src="img/weapon/AR/ar_akm.4441bb1a.png" alt="weapon-img"/>
                             </div>
                         </div>
 
@@ -174,7 +199,7 @@
                                 </p>
                             </div>
                             <div class="weapon-img">
-                                <img src="img/weapon/AR/ar_aug.c31a91c2.png"/>
+                                <img src="img/weapon/AR/ar_aug.c31a91c2.png"alt="weapon-img"/>
                             </div>
                         </div>
                         
@@ -187,7 +212,7 @@
                                 </p>
                             </div>
                             <div class="weapon-img">
-                                <img src="img/weapon/AR/ar_groza.94253706.png"/>
+                                <img src="img/weapon/AR/ar_groza.94253706.png"alt="weapon-img"/>
                             </div>
                         </div>
                             
@@ -200,7 +225,7 @@
                                 </p>
                             </div>
                             <div class="weapon-img">
-                                <img src="img/weapon/AR/ar_m16a4.75b2e69d.png"/>
+                                <img src="img/weapon/AR/ar_m16a4.75b2e69d.png"alt="weapon-img"/>
                             </div>
                         </div>
 
@@ -213,7 +238,7 @@
                                 </p>
                             </div>
                             <div class="weapon-img">
-                                <img src="img/weapon/AR/ar_m416.8ba80ba9.png"/>
+                                <img src="img/weapon/AR/ar_m416.8ba80ba9.png"alt="weapon-img"/>
                             </div>
                         </div>
 
@@ -226,7 +251,7 @@
                                 </p>
                             </div>
                             <div class="weapon-img">
-                                <img src="img/weapon/AR/ar_scar.e9754221.png"/>
+                                <img src="img/weapon/AR/ar_scar.e9754221.png"alt="weapon-img"/>
                             </div>
                         </div>
 
@@ -242,7 +267,7 @@
                                 </p>
                             </div>
                             <div class="weapon-img">
-                                <img src="img/weapon/SR/sr_awm.a543c81f.png"/>
+                                <img src="img/weapon/SR/sr_awm.a543c81f.png"alt="weapon-img"/>
                             </div>
                         </div>
 
@@ -255,7 +280,7 @@
                                 </p>
                             </div>
                             <div class="weapon-img">
-                                <img src="img/weapon/SR/sr_kar98k.eee0c968.png"/>
+                                <img src="img/weapon/SR/sr_kar98k.eee0c968.png"alt="weapon-img"/>
                             </div>
                         </div>
 
@@ -268,7 +293,7 @@
                                 </p>
                             </div>
                             <div class="weapon-img">
-                                <img src="img/weapon/SR/sr_m24.67b18254.png"/>
+                                <img src="img/weapon/SR/sr_m24.67b18254.png"alt="weapon-img"/>
                             </div>
                         </div>
 
@@ -281,7 +306,7 @@
                                 </p>
                             </div>
                             <div class="weapon-img">
-                                <img src="img/weapon/SR/sr_win94.92a03872.png"/>
+                                <img src="img/weapon/SR/sr_win94.92a03872.png"alt="weapon-img"/>
                             </div>
                         </div>
 
@@ -297,7 +322,7 @@
                                 </p>
                             </div>
                             <div class="weapon-img">
-                                <img src="img/weapon/DMR/dmr_sks.cc5d5cd9.png"/>
+                                <img src="img/weapon/DMR/dmr_sks.cc5d5cd9.png"alt="weapon-img"/>
                             </div>
                         </div>
 
@@ -310,7 +335,7 @@
                                 </p>
                             </div>
                             <div class="weapon-img">
-                                <img src="img/weapon/DMR/dmr_sks.cc5d5cd9.png"/>
+                                <img src="img/weapon/DMR/dmr_sks.cc5d5cd9.png"alt="weapon-img"/>
                             </div>
                         </div>
 
@@ -323,7 +348,7 @@
                                 </p>
                             </div>
                             <div class="weapon-img">
-                                <img src="img/weapon/DMR/dmr_vss.2dad5921.png"/>
+                                <img src="img/weapon/DMR/dmr_vss.2dad5921.png"alt="weapon-img"/>
                             </div>
                         </div>
                     </div> <!---------------------- DMR end!!!!! ---------------------->
@@ -338,7 +363,7 @@
                                 </p>
                             </div>
                             <div class="weapon-img">
-                                <img src="img/weapon/SG/sg_s12k.fb2d2612.png"/>
+                                <img src="img/weapon/SG/sg_s12k.fb2d2612.png"alt="weapon-img"/>
                             </div>
                         </div>
 
@@ -351,7 +376,7 @@
                                 </p>
                             </div>
                             <div class="weapon-img">
-                                <img src="img/weapon/SG/sg_s1897.fba389a6.png"/>
+                                <img src="img/weapon/SG/sg_s1897.fba389a6.png"alt="weapon-img"/>
                             </div>
                         </div>
 
@@ -364,7 +389,7 @@
                                 </p>
                             </div>
                             <div class="weapon-img">
-                                <img src="img/weapon/SG/sg_s686.6e646eba.png"/>
+                                <img src="img/weapon/SG/sg_s686.6e646eba.png"alt="weapon-img"/>
                             </div>
                         </div>
                     </div> <!---------------------- SG end!!!!! ---------------------->
@@ -379,7 +404,7 @@
                                 </p>
                             </div>
                             <div class="weapon-img">
-                                <img src="img/weapon/OTHERS/other_crossbow.ed10f9df.png"/>
+                                <img src="img/weapon/OTHERS/other_crossbow.ed10f9df.png"alt="weapon-img"/>
                             </div>
                         </div>
 
@@ -392,7 +417,7 @@
                                 </p>
                             </div>
                             <div class="weapon-img">
-                                <img src="img/weapon/OTHERS/other_dp-28.244705aa.png"/>
+                                <img src="img/weapon/OTHERS/other_dp-28.244705aa.png"alt="weapon-img"/>
                             </div>
                         </div>
 
@@ -405,7 +430,7 @@
                                 </p>
                             </div>
                             <div class="weapon-img">
-                                <img src="img/weapon/OTHERS/other_m249.918846e5.png"/>
+                                <img src="img/weapon/OTHERS/other_m249.918846e5.png"alt="weapon-img"/>
                             </div>
                         </div>
                     </div> <!---------------------- OTHERS end!!!!! ---------------------->
@@ -420,7 +445,7 @@
                                 </p>
                             </div>
                             <div class="weapon-img">
-                                <img src="img/weapon/SMG/smg_microuzi.268601b1.png"/>
+                                <img src="img/weapon/SMG/smg_microuzi.268601b1.png"alt="weapon-img"/>
                             </div>
                         </div>
 
@@ -433,7 +458,7 @@
                                 </p>
                             </div>
                             <div class="weapon-img">
-                                <img src="img/weapon/SMG/smg_tommygun.632ec534.png"/>
+                                <img src="img/weapon/SMG/smg_tommygun.632ec534.png"alt="weapon-img"/>
                             </div>
                         </div>
                         
@@ -446,7 +471,7 @@
                                 </p>
                             </div>
                             <div class="weapon-img">
-                                <img src="img/weapon/SMG/smg_vector.f5a6cb68.png"/>
+                                <img src="img/weapon/SMG/smg_vector.f5a6cb68.png"alt="weapon-img"/>
                             </div>
                         </div>
                     </div> <!---------------------- SMG end!!!!! ---------------------->
@@ -461,7 +486,7 @@
                                 </p>
                             </div>
                             <div class="weapon-img">
-                                <img src="img/weapon/SIDEARM/sidearm_skorpion.716a0533.png"/>
+                                <img src="img/weapon/SIDEARM/sidearm_skorpion.716a0533.png"alt="weapon-img"/>
                             </div>
                         </div>
 
@@ -474,7 +499,7 @@
                                 </p>
                             </div>
                             <div class="weapon-img">
-                                <img src="img/weapon/SIDEARM/sidearm_sawed-off.3d25fcb6.png"/>
+                                <img src="img/weapon/SIDEARM/sidearm_sawed-off.3d25fcb6.png"alt="weapon-img"/>
                             </div>
                         </div>
                     </div><!---------------------- SIDEARM end!!!!! ---------------------->
@@ -484,11 +509,12 @@
                             <div class="slide-tx">
                                 <h4>Sickle</h4>
                                 <p>
-                                    풀을 배거나 수확할 때 필요한 도구이지만, 드물게 사람을 수확하는데에도 사용된다고 한다.
+                                    풀을 배거나 수확할 때 필요한 도구이지만,<br/>
+                                    드물게 사람을 수확하는데에도 사용된다고 한다.
                                 </p>
                             </div>
                             <div class="weapon-img">
-                                <img src="img/weapon/MELEE/melee_sickle.73567b5a.png"/>
+                                <img src="img/weapon/MELEE/melee_sickle.73567b5a.png"alt="weapon-img"/>
                             </div>
                         </div>
 
@@ -496,11 +522,11 @@
                             <div class="slide-tx">
                                 <h4>Pan</h4>
                                 <p>
-                                    요리에 꼭 필요한 조리기구이지만, 의외로 전장에서 찾는 사람이 많다고한다. 프라이팬으로 총알을 막을 수 있다면 믿겠는가?
+                                    요리에 꼭 필요한 조리기구이지만, 의외로 전장에서<br/>찾는 사람이 많다고한다. 프라이팬으로 총알을 막을 수 있다면 믿겠는가?
                                 </p>
                             </div>
                             <div class="weapon-img">
-                                <img src="img/weapon/MELEE/melee_pan.a4140867.png"/>
+                                <img src="img/weapon/MELEE/melee_pan.a4140867.png"alt="weapon-img"/>
                             </div>
                         </div>
 
@@ -508,11 +534,11 @@
                             <div class="slide-tx">
                                 <h4>Crowbar</h4>
                                 <p>
-                                    문을 부수는 용도로 특화되어 있지만, 간확 사람을 부수는 용도로도 사용된다고 한다.
+                                    문을 부수는 용도로 특화되어 있지만,<br/>간혹 사람을 부수는 용도로도 사용된다고 한다.
                                 </p>
                             </div>
                             <div class="weapon-img">
-                                <img src="img/weapon/MELEE/melee_crowbar.371ad5f9.png"/>
+                                <img src="img/weapon/MELEE/melee_crowbar.371ad5f9.png"alt="weapon-img"/>
                             </div>
                         </div>
 
@@ -521,11 +547,11 @@
                                 <h4>Machete</h4>
                                 <span>12 Gauge/2 [no max]</span>
                                 <p>
-                                    정글에서 나무덩굴 등을 베는데 특화되어있지만, 의오로 사람을 베는 용도로도 자주 사용된다고 한다.
+                                    정글에서 나무덩굴 등을 베는데 특화되어있지만,<br/>의오로 사람을 베는 용도로도 자주 사용된다고 한다.
                                 </p>
                             </div>
                             <div class="weapon-img">
-                                <img src="img/weapon/MELEE/melee_machete.30c9fb20.png"/>
+                                <img src="img/weapon/MELEE/melee_machete.30c9fb20.png"alt="weapon-img"/>
                             </div>
                         </div>
                     </div><!---------------------- SIDEARM end!!!!! ---------------------->
@@ -534,7 +560,7 @@
             </div>
 
 
-
+            
             <div id="weapon-type-box">
                 <ul id="weapon-type-nav">
                     <li class="type">AR</li>
@@ -550,29 +576,113 @@
         </div>
 
 
-
-
-
-
-
         <!------------ 4.page - news ------------>
 
-        <!--
-        <div id="news">
-            <div id="notice">
-                <div class="news-heading">
-                    <h3>공지사항</h3>
-                    <span>• • •</span>
+       <div id="news-area">
+           <div id="news-wrap">
+                <div id="notice-wrap">
+                    <div class="news-heading">
+                        <h4>NOTICE</h4>
+                        <span> → </span>
+                    </div>
+                    <!-- <hr/> -->
+                    <div id="notice-list">
+                        <div id="notice-title">
+                            <ul>
+                                <li>[정상화]게임코인 충전 안내</li>
+                                <li>서비스 제안과 불법 프로그램 제보 접수 안내</li>
+                                <li>3월 1주차 이용제한 현황 및 안티치트 업데이트</li>
+                                <li>[완료] 3월 11일(수) 무점검 패치 안내</li>
+                                <li>신규맵에 숨겨진 비밀, 카라킨 투어 가이드</li>
+                                <li>[추가/수정] 간헐적인 비정상 게임 종료 현상 안내</li>
+                            </ul>
+                        </div>
+                        <div id="notice-date">
+                            <ul>
+                                <li>20.03.21</li>
+                                <li>20.03.19</li>
+                                <li>20.03.15</li>
+                                <li>20.03.14</li>
+                                <li>20.03.12</li>
+                                <li>20.03.10</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="contest-wrap">
+                    <div class="news-heading">
+                        <h4>CONTEST</h4>
+                        <span> → </span>
+                    </div>
+                    <!-- <hr/> -->
+                    <div id="contest-thumb">
+                        <div class="contest-img">
+                            <img src="img/contest1.png" alt="contest-img"/>
+                        </div>
+                        <div class="contest-img">
+                            <img src="img/contest2.png" alt="contest-img"/>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div id="contest">
-                <div class="news-heading">
-                    <h3>대회소식</h3>
-                    <span>• • •</span>
+        </div> <!-- news area END!!!!! -->
+
+        <div id="marketing">
+            <div id="marketing-out">
+                <div id="marketing-wrap">
+                    <div id="marketing-tx">
+                        <span>오늘 XBOX, PC, PS에서 플레이 하세요</span>
+                        <p>배틀로얄 게임 BATTLEGROUND, 전장에서 총 100명의<br/>
+                        플레이어 중 마지막까지 살아남는 최후의 1인.</p>
+                    </div>
+                    <div id="marketing-img">
+                        <div>
+                            <img src="img/w_steam.png" alt="steam-logo"/>
+                        </div>
+                        <div>
+                            <img src="img/w_xbox.png" alt="xbox-logo"/>
+                        </div>
+                        <div>
+                            <img src="img/w_psn.png" alt="psn-logo"/>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        -->
+
+
+        <footer id="footer">
+
+            <div id="footer-logo">
+                <img src="img/footer_logo.png" alt="footer-logo"/>
+            </div>
+            <p>
+                COPYRIGHT ©2019 PUBG CORPORATION. ALL RIGHTS RESERVED.<br/>
+                PLAYERUNKNOWN’S BATTLEGROUNDS 및 PUBG는 PUBG CORPORATION의 등록된 상표입니다
+            </p>
+            <p>사업제휴문의: PUBG_inquiry@pubg.com</p>
+
+            <ul>
+                <li>개인정보 처리방침</li>
+                <li>이용자 제작 콘텐츠 규칙</li>
+                <li>이용 약관</li>
+                <li>운영 정책</li>
+                <li>최종 사용자 라이선스 계약</li>
+                <li>청약철회 규정</li>
+            </ul>
+            <div id="limit">
+                <div class="limit-square">
+                    <img src="img/rule1.png" alt="limit-18"/>
+                </div>
+                <div class="limit-square">
+                    <img src="img/rule2.png" alt="limit-vio"/>
+                </div>
+                <div id="limit-table">
+                    <img src="img/rule3.png" alt="limit-table"/>
+                </div>
+            </div>
+        </footer>
+
 
     </div>
 </body>

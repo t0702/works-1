@@ -10,10 +10,8 @@ for(var i = 0; i <heading.length; i++){
             e.target.parentNode.classList.add('active');
             activelist(); 
         }
-        
     })
 }
-
 
 
 function activelist(){
@@ -24,10 +22,6 @@ function activelist(){
     activePanel.style.display = "block";
 }
     
-
-
-
-
 
 
 

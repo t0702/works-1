@@ -1,77 +1,39 @@
-// 변수 지정
-var sliderContainer = document.getElementsByClassName('slider-container'), //slider-container
+var sliderContainer = document.getElementsByClassName('slider-container'),
     ArSlides = document.getElementsByClassName('AR-slider'),
-    ArSlideCount = ArSlides.length,                 //슬라이드 개수
-    currentIndex = 0,                            //첫 슬라이드
-    btnPrev = document.getElementById('prev'),   //아이디 prev
-    btnNext = document.getElementById('nex');   //아이디 next
+    ArSlideCount = ArSlides.length,//슬라이드 개수
+    currentIndex = 0,//첫 슬라이드
+    btnPrev = document.getElementById('prev'),
+    btnNext = document.getElementById('nex');
 
-// 슬라이드가 있으면 가로로 배열하기
-for( var i = 0; i < ArSlideCount; i++){
+for( var i = 0; i < ArSlideCount; i++){ // 슬라이드가 있으면 가로로 배열하기
     ArSlides[i].style.left = (i * 100)+ '%';
 }
 
-// 슬라이드 이동 함수 
-function goToSlide(idx){
+function goToSlide(idx){ // 슬라이드 이동 함수 
     for(var k = 0; k < sliderContainer.length; k++){
-        sliderContainer[k].style.left = (idx * -100) + '%';
-        sliderContainer[k].classList.add('animated');   //silder-container에 클래스명 animated 추가.
-        currentIndex = idx;
+        sliderContainer[0].style.left = (idx * -100) + '%';
+        sliderContainer[0].classList.add('animated');
     }
-    // sliderContainer[0,1].style.left = (idx * -100) + '%';
-    // sliderContainer[0,1].classList.add('animated');   //silder-container에 클래스명 animated 추가.
-    // currentIndex = idx;
+    // sliderContainer[0].style.left = (idx * -100) + '%';
+    // sliderContainer[0].classList.add('animated');
+    currentIndex = idx;
 }
 
 
-//버튼 클릭하면 슬라이드 이동시키기
-btnPrev.addEventListener('click',function(e){
+btnPrev.addEventListener('click',function(e){ //버튼 클릭하면 슬라이드 이동시키기
     e.preventDefault();
-    //goToSlide(currentIndex - 1);
-    //처음이 아니라면 이전. goToSlide(currentIndex - 1);
-    //처음이라면 goToSlide(???)
     if(currentIndex > 0){
         goToSlide(currentIndex - 1);
     }else{
         goToSlide(ArSlideCount-1);
     }
-
 });
 btnNext.addEventListener('click',function(e){
     e.preventDefault();
-    //goToSlide(currentIndex + 1);
-
     if(currentIndex < ArSlideCount - 1){
         goToSlide(currentIndex + 1);
     }else{
         goToSlide(0);
     }
 });
-
-// 첫번째 슬라이드 먼저 보이도록 하기
 goToSlide(0);
-
-
-
-// var WeaponType = document.getElementsByClassName('type');
-// var Ar = document.getElementById('AR');
-// // 변수 지정
-// var slides = document.getElementsByClassName('slider');
-
-// for(var j = 0; j < WeaponType.length; j++){
-//     WeaponType[j].addEventListener('click', function(){
-//         for(var z = 0; z < WeaponType.length; z++){
-//             sliderContainer[z].style.display = 'block'
-
-//             if(sliderContainer == WeaponType){
-//                 sliderContainer[z].style.display = 'none';
-//             }
-//         }
-
-
-
-        
-//     });
-// }
-
-
