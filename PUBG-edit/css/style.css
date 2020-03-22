@@ -637,6 +637,20 @@ body{
         bottom: 50%;
         transform: translateY(50%) rotate(-45deg);
     }
+    .sidebar-wrap{
+        width: 300px;
+        height: 100%;
+        background:#222;
+        position: fixed;
+        top:60px;
+        right: -300px;
+        z-index:99999;
+        transition: all .35s;
+    }
+    input[id="menuicon"]:checked + label + div{
+        right:0;
+    }
+
 
 
 
