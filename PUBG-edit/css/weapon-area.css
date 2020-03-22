@@ -190,11 +190,22 @@
 /* waepon nav */
 .type {
   z-index: 1;
+  width:80px;
+  text-align: center;
+}
+.type:hover{
+    background: var(--point-color);
+    background: -webkit-linear-gradient(left, var(--strong-color), var(--point-color), var(--light-color));
+    -webkit-background-clip: text;
+            background-clip: text;
+    color: transparent;
+    
 }
 .type_wrap{
   display:flex;
   flex-wrap: wrap;
 }
+
 #weapon-type-box {
   max-width: 1280px;
   width: 100%;
@@ -207,9 +218,10 @@
 }
 #weapon-type-nav {
   display: flex;
+  /* flex-wrap: wrap; */
   justify-content: space-between;
   align-items: center;
-  padding: 10px 50px;
+  padding: 10px 20px;
   margin: 0 100px;
   margin-bottom: 30px;
   border-top: 1px solid white;
@@ -217,6 +229,7 @@
   width: 100%;
 }
 #weapon-type-nav li {
+  width: 100%;
   font-family: var(--point-font);
   font-size: 28px;
   color: white;
@@ -261,14 +274,18 @@
   width: 120px;
 }
 
-
+@media screen and (max-width: 1080px){
+  .weapon-wrap2{
+    top:-330px;
+  }
+}
 @media screen and (max-width: 786px){
   #weapon{
     height: 600px;
   }
   
   .weapon-wrap2{
-    top: -450px;
+    top: -430px;
     height: 600px;
   }
   .weapon-img, .weapon-img img{
@@ -299,15 +316,30 @@
     max-width: 350px;
     text-align:center;
   }
+  #weapon-type-nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width:450px;
+  }
+  #weapon-type-nav li{
+    margin: 0 20px;
+  }
+
+
 }
 @media screen and (max-width: 480px) {
   #weapon{
-    height: 600px;
+    height: 630px;
   }
   
   .weapon-wrap2{
-    top: -450px;
+    top: -430px;
     height:600px;
+  }
+  #weapon-type-nav{
+    margin-bottom:10px;
+    min-width: 270px;
   }
   .weapon-img, .weapon-img img{
     width: 250px;
@@ -334,12 +366,13 @@
     padding: 0;
   }
   .slide-tx{
-    max-width: 350px;
+    max-width: 300px;
     text-align:center;
   }
-  .type{
-  
+  .slide-tx br{
+    display:none;
   }
+  
   
 
 }

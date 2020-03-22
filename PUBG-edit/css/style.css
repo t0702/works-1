@@ -66,6 +66,7 @@ body{
     list-style: none;
     padding-left: 50px;
 }
+#hamburger{display: none;}
 #logo, #logo img{ width: 70px;}
 #logout{padding-right: 20px;}
 
@@ -556,9 +557,11 @@ body{
 #limit div, #limit img{
     height: 80px;
 }
-footer br{
-        display: block;
-    }
+#footer p{ margin: 0;}
+#footer p:nth-child(3){margin-bottom:10px;}
+#footer br{
+    display: none;
+}
 
 
 
@@ -584,11 +587,62 @@ footer br{
     }
     #nav-top-in{ padding:0;}
     
-    #mobile-menubar{
+    #hamburger{display: block;}
+
+    #hamburger{
         width: 70px;
         height: 100%;
         background-color: var(--point-color)
     }
+    input[id="menuicon"]{
+        display: none;
+    }
+    input[id="menuicon"] + label{
+        display: block;
+        width: 30px;
+        height: 30px;
+        position: relative;
+        cursor: pointer;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+    }
+    input[id="menuicon"] + label span{
+        display: block;
+        position: absolute;
+        width:30px;
+        height:4px;
+        border-radius: 30px;
+        background: white;
+        transition: all .35s;
+    }
+    input[id="menuicon"] + label span:nth-child(1){
+        top: 0;
+    }
+    input[id="menuicon"] + label span:nth-child(2){
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    input[id="menuicon"] + label span:nth-child(3){
+        bottom:0;
+    }
+    input[id="menuicon"]:checked + label span:nth-child(1){
+        top: 50%;
+        transform: translateY(-50%) rotate(45deg);
+    }
+    input[id="menuicon"]:checked + label span:nth-child(2){
+        opacity: 0;   
+    }
+    input[id="menuicon"]:checked + label span:nth-child(3){
+        bottom: 50%;
+        transform: translateY(50%) rotate(-45deg);
+    }
+
+
+
+
+
+
     /* #main_tx{ font-family} */
     #center_tx br{display: block;}
     #sub_tx{font-size: 17px; line-height: 2em;}
@@ -622,6 +676,7 @@ footer br{
     #up-banner{
         margin-top: 50px;
     }
+    
     #marketing-wrap{
         height:350px;
     }
@@ -693,6 +748,9 @@ footer br{
         width: 200px;
         height: 200px;
     }
+
+
+    
     #thumb-pannel p{ font-size:20px;}
     #pn-arrow img{ width:80px;}
 
