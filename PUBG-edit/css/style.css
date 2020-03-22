@@ -46,6 +46,12 @@ body{
 #nav-top{
     padding: 30px 100px;
     display: flex;
+    justify-content:  space-between;
+}
+#nav-top-in{
+    width:100%;
+    padding-right:20px;
+    display: flex;
     justify-content: space-between;
     align-items: center;
 }
@@ -122,7 +128,7 @@ body{
 
 #main_tx{
     padding: 15px 20px;
-    font-size: 24px;
+    font-size: 20px;
     border: 1px solid white;
     filter: drop-shadow(0 0 10px rgb(0, 0, 0));
     background-color: rgb(0, 0, 0, 0.1);
@@ -158,8 +164,9 @@ body{
 #playnow-in > p{
     margin:0;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 40px;
     color: transparent;
+    font-family: var(--point-font);
     background: var(--main-color);
     background: -webkit-linear-gradient(left, var(--strong-color), var(--light-color), var(--strong-color));
     -webkit-background-clip: text;
@@ -538,8 +545,51 @@ body{
 
 
 /* -------------------mobile-------------------- */
+@media screen and (max-width: 1080px){
+    #nav-side{ padding-left: 50px;}
+    #nav-top{ padding-right: 50px; padding-left: 50px;}
+    
+}
 
-@media screen and (min-width: 769px) {
-    /* 데스크탑에서 사용될 스타일을 여기에 작성합니다. */
+@media screen and (max-width: 786px){
+    #playnow-out{display: none;}
+    #arrowbox p{display: none;}
+    #nav-top{ 
+        padding: 0;
+        height: 60px;
+        background-color: var(--main-color);
+    }
+    #nav-side{ display: none;}
+    #logo{ padding:10px;}
+    #logo img{
+        width :60px;
+    }
+    #logout{display: none;}
+    #mobile-menubar{
+        width: 70px;
+        height: 100%;
+        background-color: var(--point-color)
+    }
+    #center_tx p{
+        font-size: 17px;
+    }
+    
+}
+
+@media screen and (max-width: 480px) {
+    #main{
+        box-shadow: none;
+        height: 100vh;
+    }
+    #nav-top{ 
+        padding: 0;
+        height: 60px;
+        background-color: var(--main-color);
+    }
+    
+    
+    
+    
  }
+ 
  
