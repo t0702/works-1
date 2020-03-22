@@ -34,6 +34,8 @@ body{
     position: relative;
     box-shadow: 0 -10px 80px var(--point-color);
     z-index: 1;
+    transition: all .35s;
+    -webkit-transition: all .35s;
 }
 #flame{
     position: absolute;
