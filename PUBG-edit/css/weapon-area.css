@@ -191,6 +191,10 @@
 .type {
   z-index: 1;
 }
+.type_wrap{
+  display:flex;
+  flex-wrap: wrap;
+}
 #weapon-type-box {
   max-width: 1280px;
   width: 100%;
@@ -243,11 +247,9 @@
 }
 
 #prev {
-  /* left: 10%; */
   cursor: pointer;
 }
 #nex {
-  /* right: 10%; */
   cursor: pointer;
 }
 
@@ -255,3 +257,90 @@
 #nex.disabled {
   display: none;
 }
+#prev img, #nex img{
+  width: 120px;
+}
+
+
+@media screen and (max-width: 786px){
+  #weapon{
+    height: 600px;
+  }
+  
+  .weapon-wrap2{
+    top: -450px;
+    height: 600px;
+  }
+  .weapon-img, .weapon-img img{
+    width: 250px;
+  }
+  .weapon-img{
+    height:220px;
+  }
+  #prev img, #nex img{
+    width: 90px;
+  }
+  #prev-nex-wrap{
+    top:40%;
+  }
+  .AR-slider,
+  .SR-slider,
+  .DMR-slider,
+  .SG-slider,
+  .OTHERS-slider,
+  .SMG-slider,
+  .SIDEARM-slider,
+  .MELEE-slider{
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0;
+  }
+  .slide-tx{
+    max-width: 350px;
+    text-align:center;
+  }
+}
+@media screen and (max-width: 480px) {
+  #weapon{
+    height: 600px;
+  }
+  
+  .weapon-wrap2{
+    top: -450px;
+    height:600px;
+  }
+  .weapon-img, .weapon-img img{
+    width: 250px;
+  }
+  .weapon-img{
+    height:220px;
+  }
+  #prev img, #nex img{
+    width: 90px;
+  }
+  #prev-nex-wrap{
+    top:40%;
+  }
+  .AR-slider,
+  .SR-slider,
+  .DMR-slider,
+  .SG-slider,
+  .OTHERS-slider,
+  .SMG-slider,
+  .SIDEARM-slider,
+  .MELEE-slider{
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0;
+  }
+  .slide-tx{
+    max-width: 350px;
+    text-align:center;
+  }
+  .type{
+  
+  }
+  
+
+}
+

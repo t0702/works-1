@@ -26,7 +26,7 @@ body{
 /* -------------------main--------------------- */
 #main{
     width: 100%;
-    height: 750px;
+    height: 700px;
     background-image: url(../img/main3.png);
     background-size: cover;
     background-position: top;
@@ -38,7 +38,7 @@ body{
 #flame{
     position: absolute;
     width: 100%;
-    height: 750px;
+    height: 700px;
     mix-blend-mode: screen;
     user-select: none;
     pointer-events: none;
@@ -67,6 +67,7 @@ body{
     padding-left: 50px;
 }
 #logo, #logo img{ width: 70px;}
+#logout{padding-right: 20px;}
 
 #nav-side{
     width: 200px;
@@ -122,22 +123,27 @@ body{
     filter: drop-shadow(0 0 10px rgb(0, 0, 0));
     color: white;
     text-align: center;
-    font-weight: lighter;
+    font-weight: normal;
     font-size:20px;
 }
-
+#center_tx br{ display: none;}
+#sub_tx { font-size: 17px;}
+#sub_tx span{ font-weight: bold;}
 #main_tx{
     padding: 15px 20px;
-    font-size: 20px;
+    font-size: 24px;
+    font-family: var(--point-font);
+    letter-spacing: 0.3em;
+    font-weight: bold;
     border: 1px solid white;
     filter: drop-shadow(0 0 10px rgb(0, 0, 0));
     background-color: rgb(0, 0, 0, 0.1);
 }
-.right-left-border{
+/* .right-left-border{
     border-right: 1px solid white;
     border-left: 1px solid white;
     padding: 0 10px;
-}
+} */
 
 
 #playnow-out{
@@ -201,20 +207,24 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
-    padding: 180px 180px 100px;
+    
+    padding: 100px 0px 50px;
 }
+
 #up-in{
     max-width:1080px;
     margin: 0 auto;
-    
 }
 #up-wrap{
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    /* margin: 0 30px; */
 }
 #tx-area{
+    max-width: 350px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     color: white;
@@ -235,6 +245,7 @@ body{
     color: var(--point-color);
     margin-top:10px;
 }
+#tx-area br{ display: none;}
 #detail{
     width: 160px;
     height: 45px;
@@ -256,6 +267,7 @@ body{
     flex-direction: column;
     justify-content: center;
 }
+
 #up-banner span{
     color: var(--point-color);
     font-size: 30px;
@@ -297,6 +309,7 @@ body{
 .thumb, .thumbImg{
     width: 300px;
     height: 300px;
+    transition: all 1s;
 }
 
 #thumb-pannel{
@@ -314,7 +327,6 @@ body{
     font-weight: bold;
     box-sizing: border-box;
     filter: drop-shadow( 0 0 5px rgb(0, 0, 0,0.5));
-    
 }
 
 #pn-arrow{
@@ -526,6 +538,9 @@ body{
     list-style: none;
     padding: 0 10px;
 }
+#footer br{
+    display: none;
+}
 #footer li:nth-child(1){ color: white; font-weight: bold;}
 #footer li:hover{
     color: var(--strong-color);
@@ -541,6 +556,9 @@ body{
 #limit div, #limit img{
     height: 80px;
 }
+footer br{
+        display: block;
+    }
 
 
 
@@ -548,47 +566,166 @@ body{
 @media screen and (max-width: 1080px){
     #nav-side{ padding-left: 50px;}
     #nav-top{ padding-right: 50px; padding-left: 50px;}
-    
+    #center_tx br{display: none;}
 }
 
 @media screen and (max-width: 786px){
-    #playnow-out{display: none;}
-    #arrowbox p{display: none;}
     #nav-top{ 
         padding: 0;
         height: 60px;
         background-color: var(--main-color);
     }
+    #playnow-out{display: none;}
+    #arrowbox{background-color: rgb(22,22,22,0.5); }
+    #arrowbox p{display: none;}
     #nav-side{ display: none;}
-    #logo{ padding:10px;}
     #logo img{
         width :60px;
     }
-    #logout{display: none;}
+    #nav-top-in{ padding:0;}
+    
     #mobile-menubar{
         width: 70px;
         height: 100%;
         background-color: var(--point-color)
     }
-    #center_tx p{
-        font-size: 17px;
+    /* #main_tx{ font-family} */
+    #center_tx br{display: block;}
+    #sub_tx{font-size: 17px; line-height: 2em;}
+    #sub_tx span{ font-weight: bold;}
+    #center_tx br{display: block;}
+
+    #update{
+        height: 580px;
+        padding:0;
+        padding-top: 50px;
+    }
+    #gun{display: none;}
+
+    #tx-area p{ margin:5px 0;}
+    
+    #tx-area{ 
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+        max-width: 600px;
+        width: 100%;
+    }
+    #up-wrap{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        
+    }
+    #up-banner{
+        margin-top: 50px;
+    }
+    #marketing-wrap{
+        height:350px;
+    }
+    #marketing{
+        height:350px;
+        background-position: right;
+        display:flex;
+        justify-content: center;
+    }
+    #marketing-img{
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin:0;
+        margin-top:20px;
+    }
+    #marketing-img div{
+        margin-bottom: 20px;
+    }
+    #marketing-img div:nth-child(3){margin:0;}
+    #marketing-tx span{
+        font-size:20px;
+    }
+
+    #footer ul{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #limit{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .limit-square{
+        margin-bottom:20px;
     }
     
 }
 
 @media screen and (max-width: 480px) {
-    #main{
-        box-shadow: none;
-        height: 100vh;
-    }
     #nav-top{ 
         padding: 0;
         height: 60px;
         background-color: var(--main-color);
     }
-    
-    
-    
+    #main{
+        height: 100vh;
+        box-shadow: none;
+    }
+    #flame{
+        height: 100vh;
+        width: 
+    }
+    #nav-top-in{ padding-right:20px;}
+    #nav-side{ display: none;}
+    #logo{ padding:10px;}
+
+    #logout{display: none;}
+    #nav-top{ 
+        padding: 0;
+        height: 60px;
+        background-color: var(--main-color);
+    }
+    .right-left-border{
+        border:0;
+    }
+    .thumb, .thumbImg{
+        width: 200px;
+        height: 200px;
+    }
+    #thumb-pannel p{ font-size:20px;}
+    #pn-arrow img{ width:80px;}
+
+    #tx-area{
+        max-width: 400px;
+        width: 100%;
+    }
+    #tx-area h2{
+        margin-bottom: 20px;
+        font-size: 60px;
+    }
+    #update{
+        height: 550px;
+    }
+    #tx-area br{ display: block;}
+    #up-banner{
+        background-image: none;
+        background-color: rgb(255,255,255, 0.05);
+        border-top: 1px solid white;
+        max-width: 400px;
+        width:100%;
+    }
+    #news-wrap{
+        display:flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+    }
+    #contest-wrap{
+        margin: 0;
+    }
+    #footer br{
+        display: block;
+    }
     
  }
  
