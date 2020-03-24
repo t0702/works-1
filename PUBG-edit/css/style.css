@@ -386,29 +386,19 @@ input[id*="side-heading"]+label:hover{
     cursor: pointer;
     filter: drop-shadow( 0 0 3px rgb(0, 0, 0,0.5));
 }
-/* #thumb-1{
-    background-image: url('../img/pn_pic1.png');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    box-shadow: inset 0 0 30px rgb(0, 0, 0,0.5);
-}
-#thumb-2{
-    background-image: url('../img/pn_pic2.png');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    box-shadow: inset 0 0 30px rgb(0, 0, 0,0.5);
-}
-#thumb-3{
-    background-image: url('../img/pn_pic3.png');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    box-shadow: inset 0 0 30px rgb(0, 0, 0,0.5);
-} */
 /* ----------------------------------------- */
-
+.type:hover{
+    /* font-weight: bold; */
+    color: gold;
+    background: var(--point-color);
+    background: -webkit-linear-gradient(left, var(--strong-color), var(--point-color), var(--light-color));
+    -webkit-background-clip: text;
+            background-clip: text;
+    color: transparent;
+    
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+}
 /* ------------------- news ---- ---------------- */
 
 #news-area{

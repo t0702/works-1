@@ -207,18 +207,7 @@
   color: white;
   /* font-weight: bold; */
 }
-.type:hover{
-    /* font-weight: bold; */
-    color: gold;
-    background: var(--point-color);
-    background: -webkit-linear-gradient(left, var(--strong-color), var(--point-color), var(--light-color));
-    -webkit-background-clip: text;
-            background-clip: text;
-    color: transparent;
-    
-    transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-}
+
 .type_wrap{
   display:flex;
   flex-wrap: wrap;
