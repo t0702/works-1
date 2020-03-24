@@ -201,7 +201,7 @@
 }
 /* waepon nav */
 .type {
-  z-index: 1;
+  z-index: 2;
   width:80px;
   text-align: center;
   color: white;
