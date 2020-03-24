@@ -30,7 +30,7 @@ body{
 }
 #flame{
     position: absolute;
-    width: 100%;
+    
     height: 700px;
     mix-blend-mode: screen;
     user-select: none;
@@ -811,10 +811,10 @@ input[id*="side-heading"]+label:hover{
     #main{
         height: 100vh;
         box-shadow: none;
+        overflow:hidden;
     }
     #flame{
         height: 100vh;
-        width: 
     }
     #nav-top-in{ padding-right:20px;}
     #nav-side{ display: none;}
