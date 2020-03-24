@@ -4,15 +4,6 @@
 @import url('https://fonts.googleapis.com/css?family=Teko:300,400,500,600,700&display=swap&subset=devanagari,latin-ext');
 /* font-family: 'Teko', sans-serif; */
 
-:root{
-    --main-color: #131313;
-    --point-color: #f2a900;
-    --strong-color: #ff8a00;
-    --light-color: #f6ce68;
-    --point-font: 'Teko', sans-serif;
-    --weapon-deep-blue: #373853;
-    --weapon-deep-black: #161616;
-}
 #Element{
     margin: 0 auto;
     width: 100vw;

@@ -1,3 +1,13 @@
+:root{
+  --main-color: #131313;
+  --point-color: #f2a900;
+  --strong-color: #ff8a00;
+  --light-color: #f6ce68;
+  --point-font: 'Teko', sans-serif;
+  --weapon-deep-blue: #373853;
+  --weapon-deep-black: #161616;
+}
+
 /* -------------------- weapon --------------------- */
 #weapon {
   width: 100vw;
@@ -194,14 +204,20 @@
   z-index: 1;
   width:80px;
   text-align: center;
+  color: white;
+  /* font-weight: bold; */
 }
 .type:hover{
+    /* font-weight: bold; */
+    color: gold;
     background: var(--point-color);
     background: -webkit-linear-gradient(left, var(--strong-color), var(--point-color), var(--light-color));
     -webkit-background-clip: text;
             background-clip: text;
     color: transparent;
     
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
 }
 .type_wrap{
   display:flex;
@@ -234,7 +250,6 @@
   width: 100%;
   font-family: var(--point-font);
   font-size: 28px;
-  color: white;
   list-style: none;
   cursor: pointer;
 }
