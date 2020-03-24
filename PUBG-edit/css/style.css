@@ -89,7 +89,6 @@ body{
 }
 input[id*="side-heading"]{
     display: none;
-    
 }
 input[id*="side-heading"]+label{
     display: block;
@@ -112,7 +111,7 @@ input[id*="side-heading"]:checked +label + ul{
 }
 
 
-input[id="side-heading"]+label:hover{
+input[id*="side-heading"]+label:hover{
     background: var(--point-color);
     background: -webkit-linear-gradient(left, var(--strong-color), var(--point-color), var(--light-color));
     -webkit-background-clip: text;
@@ -550,6 +549,7 @@ input[id="side-heading"]+label:hover{
     
 }
 #marketing-tx{
+    
     text-align: center;
     color: white;
     max-width:500px;
@@ -558,6 +558,7 @@ input[id="side-heading"]+label:hover{
 }
 #marketing span{ font-size: 30px; font-weight: bold; margin-bottom:10px;}
 #marketing p{line-height: 2em; margin:0;}
+#marketing br{display: none;}
 
 #marketing-img{
     margin-top: 40px;
@@ -585,6 +586,8 @@ input[id="side-heading"]+label:hover{
     text-align: center;
     font-size: 12px;
     color: gray;
+    
+    transition: all .3s;
 }
 #footer-logo, #footer-logo img{
     width:100px;
@@ -824,11 +827,10 @@ input[id="side-heading"]+label:hover{
         border:0;
     }
     .thumb, .thumbImg{
-        width: 200px;
-        height: 200px;
+        width: 150px;
+        height: 150px;
+        transition: all 0.28s;
     }
-
-
     
     #thumb-pannel p{ font-size:20px;}
     #pn-arrow img{ width:80px;}
@@ -845,6 +847,10 @@ input[id="side-heading"]+label:hover{
         height: 550px;
     }
     #tx-area br{ display: block;}
+    #up-in{
+        display:flex;
+        justify-content:center;
+    }
     #up-banner{
         background-image: none;
         background-color: rgb(255,255,255, 0.05);
@@ -852,18 +858,44 @@ input[id="side-heading"]+label:hover{
         max-width: 400px;
         width:100%;
     }
+    #up-b-title{
+        font-size: 35px;
+    }
+    #up-wrap{
+        width: 90vw;
+    }
+
+
+    #news-area{
+        margin:0;
+    }
     #news-wrap{
+        width:90vw;
         display:flex;
         flex-wrap: wrap;
         align-items: flex-end;
     }
     #contest-wrap{
         margin: 0;
+        width:100%;
+    }
+    #marketing-tx{
+        width: 90vw;
+    }
+    #marketing-tx br{
+        display: block;
     }
     #footer br{
         display: block;
     }
-    
+    #limit-table, #limit-table img{
+        width: 90vw;
+        height: auto;
+    }
+    #footer{
+        padding: 50px 0;
+        transition: all .3s;
+    }
  }
  
  
