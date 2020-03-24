@@ -537,28 +537,28 @@ input[id*="side-heading"]+label:hover{
     background-size: cover;
     background-repeat: no-repeat;
 }
-#marketing-wrap{
+#marketing-out{
     max-width:1080px;
     margin: 0 auto;
-    width:100%;
+}
+#marketing-wrap{
+    /* width:100%; */
     height:400px;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items:center;
     justify-content: center;
-    
 }
 #marketing-tx{
-    
     text-align: center;
     color: white;
     max-width:500px;
-    padding-right:30px;
-    padding-left:30px;
+    /* padding-right:30px;
+    padding-left:30px; */
 }
 #marketing span{ font-size: 30px; font-weight: bold; margin-bottom:10px;}
 #marketing p{line-height: 2em; margin:0;}
-#marketing br{display: none;}
+#marketing br:nth-child(1){display: none;}
 
 #marketing-img{
     margin-top: 40px;
@@ -635,6 +635,14 @@ input[id*="side-heading"]+label:hover{
     #nav-side{ padding-left: 50px;}
     #nav-top{ padding-right: 50px; padding-left: 50px;}
     #center_tx br{display: none;}
+    #markiting-wrap{
+        width: 500px;
+        
+    }
+
+
+
+
 }
 
 @media screen and (max-width: 786px){
@@ -748,6 +756,9 @@ input[id*="side-heading"]+label:hover{
         max-width: 600px;
         width: 100%;
     }
+    #up-in{
+        width: 90vw;
+    }
     #up-wrap{
         display: flex;
         flex-direction: column;
@@ -757,6 +768,7 @@ input[id*="side-heading"]+label:hover{
     }
     #up-banner{
         margin-top: 50px;
+        width: 100%;
     }
     
     #marketing-wrap{
@@ -880,7 +892,11 @@ input[id*="side-heading"]+label:hover{
         width:100%;
     }
     #marketing-tx{
+        padding: 0;
         width: 90vw;
+    }
+    #marketing-tx span{
+        font-size: 18px;
     }
     #marketing-tx br{
         display: block;
