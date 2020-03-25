@@ -813,10 +813,10 @@ input[id*="side-heading"]+label:hover{
     #main{
         height: 100vh;
         box-shadow: none;
-        overflow:hidden;
+        /* overflow:hidden; */
     }
     #flame-wrap{
-        overflow: hidden;
+        /* overflow: hidden; */
     }
     #flame{
         height: 100vh;
