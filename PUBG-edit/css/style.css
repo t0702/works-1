@@ -7,6 +7,7 @@
 #Element{
     margin: 0 auto;
     width: 100vw;
+    overflow: hidden;
 }
 * {font-family: 'Noto Sans KR', sans-serif;}
 * {box-sizing:border-box;}
@@ -29,7 +30,7 @@ body{
     z-index: 1;
     transition: all .35s;
     -webkit-transition: all .35s;
-    overflow:hidden;
+    /* overflow:hidden; */
 }
 #flame{
     position: absolute;
