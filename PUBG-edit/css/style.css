@@ -79,6 +79,7 @@ body{
     
 }
 .sidebar-wrap{
+    position:fixed;
     text-align: right;
     display: flex;
     flex-direction: column;
@@ -715,6 +716,7 @@ input[id*="side-heading"]+label:hover{
         z-index: -1;
         transition: all .35s;
         padding-top: 60px;
+        
     }
     input[id="menuicon"]:checked + label + div{
         right:0;
