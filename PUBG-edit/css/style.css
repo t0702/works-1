@@ -663,7 +663,7 @@ input[id*="side-heading"]+label:hover{
         display: block;
         width: 30px;
         height: 30px;
-        position: fixed;
+        position: absolute;
         cursor: pointer;
         top:30px;
         right: 0px;
@@ -690,6 +690,9 @@ input[id*="side-heading"]+label:hover{
     input[id="menuicon"] + label span:nth-child(3){
         bottom:0;
     }
+    input[id="menuicon"]:checked + label{
+        position:fixed;
+    }
     input[id="menuicon"]:checked + label span:nth-child(1){
         top: 50%;
         transform: translateY(-50%) rotate(45deg);
@@ -714,14 +717,9 @@ input[id*="side-heading"]+label:hover{
         padding-top: 60px;
         
     }
-    input[id="menuicon"]:checked + label + div{
+    input[id="menuicon"]:checked + label + .sidebar-wrap{
         right:0;
     }
-
-
-
-
-
 
 
     /* #main_tx{ font-family} */
