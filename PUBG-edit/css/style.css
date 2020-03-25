@@ -142,7 +142,7 @@ input[id*="side-heading"]+label:hover{
 #logout{padding-right: 20px;}
 
 #nav-side{
-    width: 200px;
+    width: 300px;
     padding-left: 100px;
 }
 .menu-area{
@@ -155,7 +155,7 @@ input[id*="side-heading"]+label:hover{
     font-weight: bold;
     transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
-    cursor: url(../img/cursor-pointer.png) 41 41 ,default;
+    cursor: pointer;
 }
 .menu-heading:hover{
     background: var(--point-color);
@@ -323,9 +323,11 @@ input[id*="side-heading"]+label:hover{
     height: 45px;
     border: 1px solid white;
     text-align: center;
-    padding-top:20px;
     margin-top:20px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 #up-banner{
     height: 250px;
@@ -754,6 +756,9 @@ input[id*="side-heading"]+label:hover{
         max-width: 600px;
         width: 100%;
     }
+    #update{
+        height: 600px;
+    }
     #up-in{
         width: 90vw;
     }
@@ -857,7 +862,7 @@ input[id*="side-heading"]+label:hover{
         font-size: 60px;
     }
     #update{
-        height: 550px;
+        height: 580px;
     }
     #tx-area br{ display: block;}
     #up-in{
