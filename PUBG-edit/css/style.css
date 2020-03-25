@@ -79,6 +79,7 @@ body{
     
 }
 .sidebar-wrap{
+
     position:fixed;
     text-align: right;
     display: flex;
@@ -657,6 +658,7 @@ input[id*="side-heading"]+label:hover{
     #hamburger{display: block;}
 
     #hamburger{
+        z-index: 9999;
         width: 70px;
         height: 100%;
         background-color: var(--point-color)
@@ -709,6 +711,7 @@ input[id*="side-heading"]+label:hover{
     .sidebar-wrap{
         width: 300px;
         height: 100vh;
+        min-height: 100vh;
         background:#222;
         position: fixed;
         top:0;
