@@ -234,7 +234,10 @@ footer ul li:nth-child(5){padding-right: 0;}
     
 }
 @media screen and (max-width: 786px){
-    .ngc-content{width: 90vw;}
+    .ngc-content{
+        width: 90vw; 
+        padding-top:50px;
+    }
     .logo img{ width: 150px;}
     .form{
         width: 90%;
