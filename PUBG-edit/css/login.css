@@ -8,7 +8,11 @@
     --gray-text: #909092;
     --font: Rajdhani,sans-serif;
 }
-*{box-sizing: border-box;}
+
+*{
+    box-sizing: border-box;
+    font-family: var(--font);
+}
 body{
     margin:0;
     width:100vw;
@@ -39,11 +43,12 @@ body{
     color: var(--gray-text);
     font-size: 20px;
     padding-top: 100px;
+    transition: all .3s;
 }
 .ngc-content div:nth-child(1){ display: flex; align-items: center;}
 .account, .language{width: 25px; opacity: 0.5; }
 .account-box{padding-right: 20px; cursor: pointer;}
-.language-box{padding-right: 20px; height:25px; cursor: pointer;}
+.language-box{padding-right: 20px; height:25px; cursor: pointer; transition: all .3s;}
 .account-box span{ padding: 0 10px;}
 
 .logo img{ 
@@ -119,6 +124,10 @@ form{
     align-items: flex-start;
     margin-bottom: 300px;
     transition: all .3s;
+}
+input{
+    color: white;
+    outline: none;
 }
 input[id = "pw"]{
     margin-bottom:40px;
@@ -250,6 +259,7 @@ footer ul li:nth-child(5){padding-right: 0;}
         align-items: center;
         text-align: center;
     }
+    .language-box{ padding:0;}
     .copyright br{ display: block;}
     .copyright ul{
         display: flex;
