@@ -130,7 +130,16 @@ input[id*="side-heading"]+label:hover{
 
 
 #logo, #logo img{ width: 70px;}
-#logout{padding-right: 20px;}
+#login{padding-right: 20px;}
+#login a{
+    text-decoration: none;
+    color: white;
+}
+#login a:focus,
+#login a:visited,
+#login a:hover{
+    color: white;
+}
 
 #nav-side{
     width: 300px;
@@ -824,7 +833,7 @@ input[id*="side-heading"]+label:hover{
     #nav-side{ display: none;}
     #logo{ padding:10px;}
 
-    #logout{display: none;}
+    #logoin{display: none;}
     #nav-top{ 
         padding: 0;
         height: 60px;
