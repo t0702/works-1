@@ -133,9 +133,6 @@ input[id = "pw"]{
     margin-bottom:40px;
 }
 input[type = "checkbox"]{
-    
-    
-    
     vertical-align: middle;
     cursor: pointer;
 }
