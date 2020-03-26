@@ -665,6 +665,11 @@ input[id*="side-heading"]+label:hover{
         height: 100%;
         background-color: var(--point-color)
     }
+    #login{display:none;}
+    #nav-top-in ul{
+        padding: 0;
+        padding-right: 30px;
+    }
     input[id="menuicon"]{
         display: none;
     }
@@ -724,10 +729,16 @@ input[id*="side-heading"]+label:hover{
         z-index: -1;
         transition: all .35s;
         padding-top: 60px;
-        
     }
     input[id="menuicon"]:checked + label + .sidebar-wrap{
         right:0;
+    }
+    .sidebar-wrap span a,
+    .sidebar span a:hover
+    .sidebar span a:focus,
+    .sidebar span a:active{
+        color:white;
+        text-decoration: none;
     }
 
 
