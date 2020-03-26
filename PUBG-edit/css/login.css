@@ -133,12 +133,9 @@ input[id = "pw"]{
     margin-bottom:40px;
 }
 input[type = "checkbox"]{
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    width: 30px;
-    height: 30px;
-    background-color: #404248;
+    
+    
+    
     vertical-align: middle;
     cursor: pointer;
 }
@@ -147,6 +144,7 @@ input[type = "checkbox"]{
     justify-content: flex-start;
     align-items:center;
 }
+
 .email-remember{padding-left: 15px;}
 .pw-forgot, .email-remember{
     color: var(--gray-text);
