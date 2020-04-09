@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>네이버 만화</title>
+    <style>
+        #wrap1{
+            width: 960px;
+            border: 1px solid white;
+            margin: 0 auto;
+        }
+        header h1{margin: 0px;}
+        header #naver{
+            font-size: 20px;
+        }
+        header #webtoon{
+            font-size: 28px;
+        }
+        header h2{
+            font-size: 17px;
+            color: gray;
+            padding: 0 10px;
+            margin: 0;
+            border-left: 2px solid lightgray;
+            display: inline-block;
+        }
+        #search_box {
+            width: 315px;
+            border: 1px solid lightgray;
+            display: inline-block;
+        }
+        header #search{
+            -webkit-appearance: none;
+            width: 268px;
+            height: 35px;
+            border: none;
+            padding-left: 10px;
+        }
+        header #search_img{
+            height: 20px;
+            width: 17px;
+            float: right;
+            padding:10px;
+            border-left: 1px solid lightgray;
+        }
+        .long_line{
+            border-top: 1px solid lightgray;
+            margin-top: 10px;
+        }
+        .float_right{float: right;}
+        .float_left{float: left;}
+        .clear{clear: both;}
+
+
+    </style>
+</head>
+<body>
+    <div id = "wrap1">
+        <header>
+            <h1><span id="naver">NAVER </span><span id="webtoon">만화</span</h1>
+            <h2>웹소설</h2>
+            <div id="search_box">
+                <input type="search" id="search"  placeholder="제목/작가로 검색할 수 있습니다.">
+                <img id ="search_img" src="NAVER_img/search.jpg"/>
+            </div>
+            <div class="long_line"></div>
+            <nav>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </nav>
+        </header>
+        <div>content</div>
+        <footer></footer>
+    </div>
+</body>
+</html>
