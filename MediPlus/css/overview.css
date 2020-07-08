@@ -1,0 +1,25 @@
+section.overview { position: relative; overflow: hidden; visibility: hidden; transition: 1.5s;}
+section.overview > .wrapper { width: 1480px; height: 100vh; margin: 0 auto; display: flex;}
+section.overview > .wrapper > .content {width: 740px; transition: .3s;}
+section.overview > .wrapper > .content > .menu-title {font-size: 24px; margin-top: 90px;}
+section.overview > .wrapper > .content > .plus-content {
+    display: flex; flex-direction: column; justify-content: center; align-items: center;
+}
+section.overview > .wrapper > .content > .plus-content > .title {
+    font-size: 72px; font-weight: 300; color: white; letter-spacing: 0.2em; margin-top: 90px;
+    text-align: center; margin-top: 22vh; 
+}
+section.overview > .wrapper > .content > .plus-content > .sub-con {
+    font-size: 18px; line-height: 1.6; font-weight: 300; color: white; text-align: center; margin-top: 6vh;
+}
+section.overview > .wrapper > .content > .plus-content > .plus {
+    width: 60px; height: 60px; display: flex; position: relative; align-items: center; justify-content: center; margin-top: 6vh;
+}
+section.overview > .wrapper > .content > .plus-content > .plus > .line1 {
+    width: 60px; height: 1px; background: white; position:  absolute;
+}
+section.overview > .wrapper > .content > .plus-content > .plus > .line2 {
+    width: 1px; height: 60px; background: white;  position:  absolute;
+}
+
+section.overview > .video-container { position: absolute; top: 0; width: 50vw; margin-left: 50vw; overflow: hidden; }

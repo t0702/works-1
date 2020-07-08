@@ -1,0 +1,50 @@
+section.design-color {
+    position: relative;
+    width: 1480px;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    visibility: hidden; transition: 1s;
+}
+section.design-color > div { width: 740px;}
+section.design-color > .left > .title { font-size: 24px; margin-top: 90px; }
+section.design-color > .left > .sub-title {
+    font-size: 30px; color:  #3495f8; font-weight: 300; 
+    margin: 9vh 0 8px 0;
+}
+section.design-color > .left > .sub-title2 {
+    font-size: 30px; color:  #3495f8; font-weight: 300; 
+    margin: 8px 0 8px 0;}
+    
+section.design-color > .left > .sub-title-2 {
+    font-size: 30px; line-height: 1.5; font-weight: 300; margin-bottom: 12px;
+}
+section.design-color > .left > .content {
+    font-size: 16px; font-weight: 300; line-height: 24px;
+}
+section.design-color > .left > .keywordWrap { margin: 5vh 0;}
+section.design-color > .left > .keywordWrap > svg {
+    width: 160px;
+    margin: 15px;
+}
+section.design-color > .right > .top {
+    padding: 110px 0 50px 60px; color: white; position: relative;
+    display: flex; flex-direction: column; justify-content: space-between;
+}
+section.design-color > .right > .top > p.title {font-size: 26px; position: absolute; left: 60px;}
+section.design-color > .right > .top > p.sub {font-size: 18px; position: absolute; bottom: 50px;}
+section.design-color > .right > div { height: 50vh;}
+
+section.design-color > .right > .bottom { display: flex; flex-direction: column;}
+section.design-color > .right > .bottom > div { 
+    flex: 1; padding: 30px 0 30px 60px; position: relative;
+}
+section.design-color > .right > .bottom > .yellow > .yellow-wrap,
+section.design-color > .right > .bottom > .white > .white-wrap,
+section.design-color > .right > .bottom > .black > .black-wrap { 
+    display: flex; flex-direction: column; justify-content: space-between; position: absolute; top: 30px; left: 60px; bottom: 30px;
+}
+section.design-color > .right > .bottom > .yellow span {margin-right: 30px;}
+/* section.design-color > .right > .bottom > .yellow sub {position: absolute; top:} */
+section.design-color > .right > .bottom > .black {color: white; position: relative;}

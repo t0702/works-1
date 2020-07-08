@@ -1,0 +1,66 @@
+div.menu {
+    width: 100vw; height: 100vh; position: absolute;
+    left: 0; top: -100vh;
+    z-index: 9990;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.7vw;
+    font-weight: 400;
+    cursor: pointer;
+}
+div.menu > div { 
+    position: absolute; width: 25vw; height: 100vh; 
+    display: flex; justify-content: center; align-items: center;
+    background-position: center; background-size: cover; background-repeat: no-repeat;
+    transition: all 0.7s ease-in-out; cursor: pointer;
+}
+div.menu > .home {
+    transition-delay: 0.6s;
+    top: 0; left: 0;
+    background-color:#3495f8;
+}
+
+div.menu > .strategy {
+    transition-delay: 0.4s;
+    top: 0; left: 25%;
+    background-image: url(../images/menu-planning.jpg);
+}
+
+div.menu > .design {
+    transition-delay: 0.2s;
+    top: 0; left: 50%;
+    background-image: url(../images/main-design2.jpg);
+}
+
+div.menu > .service {
+    top: 0; left: 75%;
+    background-image: url(../images/menu-service.jpg);
+}
+div.menu > div > p {
+    z-index: 999;
+}
+div.menu > div > .black-back {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100vh;
+    transition: all 0.2s ease-in-out;
+    background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
+}
+div.menu > div > .black-back:hover{
+    opacity: 0;
+}
+div.menu > div > .grey-back {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100vh;
+    transition: all 0.2s ease-in-out;
+    background: linear-gradient(to top, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0) 100%);
+}
+div.menu > div > .grey-back:hover{
+    opacity: 0;
+}
+.menu-vh{
+    top: 100vh;
+}

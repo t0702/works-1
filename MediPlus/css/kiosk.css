@@ -1,0 +1,14 @@
+section.kiosk > .video-wrap {
+    width: 1480px;
+    height: 100vh;
+    position: relative;
+    margin: 0 auto;
+    visibility: hidden; transition: all 0.2s ease-in;
+}
+section.kiosk > .video-wrap > .title {
+    position: absolute; z-index: 3;
+    font-size: 24px; font-weight: 400; 
+    left: 0; top: 90px; color: white;}
+section.kiosk > .video-wrap > img { position: absolute; top: 54%; transform: translateY(-50%);}
+/* section.kiosk > .video-wrap > video { position: absolute; left: 50%; top: 50%; transform: translate(-25%, -50%); width: 70%; } */
+section.kiosk > .video-wrap > iframe { position: absolute; left: 50%; top: 50%; transform: translate(-25%, -50%); }

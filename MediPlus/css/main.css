@@ -1,0 +1,30 @@
+section.main {
+    width: 1480px; display: flex; margin: 0 auto; position: relative; visibility: hidden; transition: .5s;
+}
+section.main > div.bottom-arrow { 
+    position: absolute; width: 91px; height: 91px; 
+    background-color: #2a3f69; border-radius: 46px;
+    left: 50%; bottom: 40px; transform: translateX(-50%);
+    visibility: hidden; transition: all 0.2s ease-in;
+}
+section.main > .main-logo { position: absolute; top: 60px;}
+section.main > article.left { width: 740px; height: 100vh; position: relative;}
+section.main > article.left > p.title { font-size: 48px; line-height: 64px; font-weight: 100; margin-top: 160px;}
+section.main > article.left > p.title > span { font-weight: 500; color: #3495f8;}
+section.main > article.left > p.sub { margin: 20px 0; font-size: 24px; font-weight: 400; color: #adadad;}
+section.main > article.left > .download { display: flex; margin: 40px 0 60px 0;cursor: pointer; }
+section.main > article.left > .download > .play,.apple {
+    width: 152px; height: 40px; font-size: 14px; background-color: #ebf1f9;
+    border-radius: 20px; margin-right: 24px; 
+}
+section.main > article.left > .download img {margin-right: 4px;}
+section.main > article.left > img {position: absolute; left: 100px; top:53%; width: 26vw;}
+section.main > article.right { width: 740px; height: 100vh; position: relative; }
+section.main > article.right > img {margin-left: 100px; width: 19vw;}
+section.main > article.right > .text-ani { 
+    position: absolute; color: white; transform: rotate(90deg);
+    z-index: -1; font-size: 216px; font-weight: 400; width: 400vw; top: 0;
+    margin-left: 50px;
+}
+section.main > article.right > .text-ani > p { line-height: 1.2; }
+/* section.main {display: none;} */

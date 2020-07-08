@@ -1,0 +1,76 @@
+section.strategy {
+    position: relative;
+    width: 1480px;
+    height: 100vh;
+    margin: 0 auto;
+    visibility: hidden; transition: 1.3s;
+    z-index: 9970;
+}
+section.strategy > .title { font-size: 24px; margin-top: 90px; }
+section.strategy > .st-app { margin-left: 80px; display: flex; justify-content: flex-start; margin-top: 12vh; position: relative;}
+section.strategy > .st-app > .app { width: 300px; margin-right: 40px; opacity: 0; z-index: 1;}
+section.strategy > .st-app > .app > .title {font-size: 24px; font-weight: 400; margin:15px 0 30px 0;}
+section.strategy > .st-app > .app > .content {font-size: 16px; font-weight: 300; line-height: 1.7;}
+section.strategy > .st-app > .app-box {
+    position: absolute; margin: 0 18px; display: flex; flex-direction: column; justify-content: center; align-items: center;
+}
+section.strategy > .st-app > .app-box {perspective: 500px; } 
+section.strategy > .st-app > .app-box > .box-wrap > .box {
+    width: 210px; height: 210px; background: #e9f0f8; border-radius: 20%;
+    font-size: 20px; display: flex; justify-content: center; align-items: center; z-index:2;
+    margin-bottom: 10px; backface-visibility:hidden; text-align: center; line-height: 1.5;
+}
+section.strategy > .st-app > .line {position: absolute; left: 0; bottom: -60px; width: 0; height: 1px; background: #000; transition: 0.6s; opacity: 0;}
+section.strategy > .st-app > .app-box:hover > .box-wrap,
+section.strategy > .st-app > .app-box.hover > .box-wrap,
+section.strategy > .st-kiosk > .kiosk-box:hover > .box-wrap,
+section.strategy > .st-kiosk > .kiosk-box.hover > .box-wrap{
+    transition: 0.5s; transform: rotateY(180deg);
+}
+
+section.strategy > .st-app > .app-box > .box-wrap,
+section.strategy > .st-kiosk > .kiosk-box > .box-wrap {
+    transition: 0.6s;
+   /* 하위요소에 3D 좌표값 지정 */
+    transform-style: preserve-3d;
+    position: relative;
+}
+section.strategy > .st-app > .app-box > .box-wrap > .box,
+section.strategy > .st-kiosk > .kiosk-box > .box-wrap > .box { transform: rotateY(0deg);z-index:2;}
+
+section.strategy > .st-app > .app-box > .box-wrap > .hover-wrap { position: relative; top:-220px; }
+
+section.strategy > .st-app > .app-box > .box-wrap > .hover-wrap > .hover-box,
+section.strategy > .st-kiosk > .kiosk-box > .box-wrap > .hover-wrap > .hover-box{
+    width: 210px; height: 210px; background: linear-gradient(315deg, #5a88fb 0%, #2998f7 100%);
+    color: #fff; display: flex; justify-content: center; align-items: center; border-radius: 20%;
+    font-size: 15px; font-weight: 300; line-height: 1.5em; padding: 20px; text-align: center; overflow:hidden;
+    position: absolute; top: 0; left: 0; transform: rotateY(180deg); backface-visibility:hidden; transition: 0.5s;
+}
+section.strategy > .st-app > .app-box > .box-wrap > .hover-wrap > .hover-box > .yellow-circle,
+section.strategy > .st-kiosk > .kiosk-box > .box-wrap > .hover-wrap > .hover-box > .yellow-circle{
+    background : linear-gradient(155deg, #fcd224 0%, #fcd12400 100%); opacity: .4; 
+    position: absolute; top: -20px; right: -20px; width: 130px; height: 130px; border-radius: 100%;
+}
+section.strategy > .st-app > .app-box:hover > .box-wrap > .hover-wrap > .hover-box > p,
+section.strategy > .st-kiosk > .kiosk-box:hover > .box-wrap > .hover-wrap > .hover-box > p {
+    z-index: 2;
+}
+
+section.strategy > .st-app > .app-box > p { color: #4c4c4c; font-size: 16px;}
+
+section.strategy > .st-kiosk { margin-left: 80px; display: flex; justify-content: flex-start; margin-top: 9vh; position: relative;}
+section.strategy > .st-kiosk > .kiosk { width: 300px; margin-right: 40px; opacity: 0; z-index: 1;}
+section.strategy > .st-kiosk > .kiosk > .title {font-size: 24px; font-weight: 400; margin:15px 0 30px 0;}
+section.strategy > .st-kiosk > .kiosk > .content {font-size: 16px; font-weight: 300; line-height: 1.7;}
+section.strategy > .st-kiosk > .kiosk-box {
+    position: absolute; margin: 0 18px; display: flex; flex-direction: column; justify-content: center; align-items: center;
+ }
+section.strategy > .st-kiosk > .kiosk-box > .box-wrap > .box {
+    width: 210px; height: 210px; background: #e9f0f8; border-radius: 20%;
+    font-size: 20px; display: flex; justify-content: center; align-items: center;
+    margin-bottom: 10px; text-align: center; line-height: 1.6; backface-visibility:hidden;
+}
+section.strategy > .st-kiosk > .kiosk-box > p { color: #4c4c4c; font-size: 16px;}
+
+

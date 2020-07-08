@@ -1,0 +1,43 @@
+section#background { 
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    /* display: flex;  */
+    left: 0;
+    top: 0;
+    z-index: -999;
+    overflow: hidden;
+    /* transform:translate(50%, 50%); */
+}
+section#background > div#main-back {
+    /* margin-left: 50vw; */
+    position: absolute;
+    width: 50%;
+    height: 300%;
+    left: 50%;
+    top: 0%;
+    /* background-color: #fff; */
+    /* 메인컬러 */
+    background-color: #3495f8;
+    transition: all 1.5s ease-in-out;
+    /* transform: rotateZ(90deg); */
+}
+section#background > div#yellowBG {  
+    background-color: #fcd432; 
+    width: 50vw; height: 50vh; 
+    position: fixed; right: -100%; bottom: 0; z-index: 0;
+    transition: all .9s ease-out;
+}
+section#background > div#blackBG {
+    background-color: #000000; 
+    width: 50vw; height: 16.6666vh; 
+    position: fixed; right: -100%; bottom: 0; z-index: 0;   
+    transition: all 0.7s ease-out;
+    transition-delay: 0.2s;
+}
+section#background > div#whiteBG {
+    background-color: #ffffff; 
+    width: 50vw; height: 16.6666vh; 
+    position: fixed; right: -100%; bottom: 16.6666vh; z-index: 0;   
+    transition: all 0.7s ease-out;
+}

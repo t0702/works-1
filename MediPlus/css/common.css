@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Noto Sans KR', sans-serif; 
+}
+.pop { 
+  font-family: 'Poppins', sans-serif;
+} 
+:root{
+  --main-color : #3495f8;
+}
+article, aside, details, figcaption, figure, footer, header,
+hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+  overflow-x: hidden;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+ol, ul {
+  list-style: none;
+}
+audio, canvas, video {
+  /* display: inline-block;
+  *display: inline;
+  *zoom: 1; */
+  /* max-width: 100%; */
+}
+.fbr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fbc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.fp-tableCell {
+  vertical-align: baseline;
+}

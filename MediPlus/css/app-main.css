@@ -1,0 +1,30 @@
+section.app-main {max-width: 1480px; width: 100%; height: 100vh; margin: 0 auto; position: relative; visibility: hidden; transition: 4s;}
+section.app-main > h2 {font-size: 24px; font-weight: normal; margin: 90px 0 125px; display: inline-block;}
+
+section.app-main .base-service.login {position: absolute; bottom: -20%; left:-55%;}
+section.app-main .base-service.join {position: absolute; bottom: 15%; left: 35%;}
+section.app-main .base-service.main {position: absolute; bottom: 50%; right: -25%}
+section.app-main .base-service img{min-width:570px; max-width:40vw; width:100%; filter:drop-shadow(0 80px 20px rgba(0,0,0,0.1));}
+
+section.app-main .base-service {font-size: 14px; font-weight: 300;}
+
+section.app-main .base-service.login .dis-line {height: 20vh; border-right: 1px solid var(--main-color); margin-bottom: 10px;}
+section.app-main .base-service.login .discript {
+    position: absolute; bottom: 5%;  margin-left: 8%;
+    display: flex; flex-direction: column; align-items: center;
+}
+
+section.app-main .base-service.main .dis-line {width: 10vw; border-bottom: 1px solid var(--main-color); margin-right: 10px;}
+section.app-main .base-service.main .discript {
+    position: absolute; top: 23%; right: -3%;
+    display: flex; justify-content: flex-start; align-items:center;
+}
+
+section.app-main .base-service.join > .discript .dis-line {height: 20vh; border-right: 1px solid var(--main-color); margin-top: 10px;}
+section.app-main .base-service.join > .discript {
+    position: absolute; top: -20%; left: -8%;
+    display: flex; flex-direction: column; align-items: center;
+}
+
+section.app-main .base-service.login {z-index:1;}
+section.app-main .base-service.main {z-index: -1;}
