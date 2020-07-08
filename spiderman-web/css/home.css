@@ -1,0 +1,20 @@
+/* home */
+section.home {
+    background: url('../img/main-spiderman.jpg') no-repeat; background-size:cover; background-position: center;
+    /* display:none; */
+}
+section.home > .big-title {position: absolute; top: 50%; left: 50%; transform: translateX(-50%); transition: .1s linear; }
+section.home > .big-title > span {font-size: 13vw; font-weight: bold; color: #fff; line-height: 12vw; white-space:nowrap; }
+section.home > .big-title > p {font-size: 1vw; font-weight: 300; color: #fff; letter-spacing: 1em; font-style: italic; text-align: right; white-space:nowrap;}
+
+section.home > .bottom-right {position: absolute; bottom:0; right: 0; margin: 40px; display:flex; align-items: flex-end;}
+section.home > .bottom-right > .saying {font-size: 14px; color: #fff; line-height: 1.5em; text-align: right; padding-right: 30px; letter-spacing: .1em;}
+section.home > .bottom-right > .sns {display: flex; flex-direction:column; align-items: center; }
+section.home > .bottom-right > .sns > a {padding: 10px 0;}
+section.home > .bottom-right > .sns > a:nth-child(4) {padding-bottom: 0;}
+
+section.home > .buy-ticket {display:flex; align-items:center; position: absolute; bottom: 0; left: 0; margin: 40px; color: #fff;}
+section.home > .buy-ticket > span { font-size: 14px; position: absolute; left: 30px; white-space:nowrap;}
+
+
+

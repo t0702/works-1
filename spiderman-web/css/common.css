@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700;900&display=swap');
+/* font-family: 'Noto Sans KR', sans-serif; */
+/* font-family: 'Raleway', sans-serif; */
+:root{ --main-font: 'Raleway', sans-serif;}
+
+/* reset */
+li {list-style:  none;}
+h1, h2, h3, h4, h5 { margin: 0;}
+
+/* common */
+body{width: 100vw; height: 100vh; position: relative;}
+* { text-decoration: none; font-family: 'Raleway', sans-serif; margin: 0; padding: 0; box-sizing: border-box; font-size: 100%; font-family: 'Raleway', sans-serif;;}
+header{position: fixed; padding: 20px 30px 0; width: 100vw; z-index: 9999;}
+header > nav {display:flex; justify-content: space-between; align-items: center; padding: 0 10px 20px;}
+header > .nav-line {border-bottom: 1px solid #fff; width: 100%;}
+header > nav > h1 > a > img{margin-right: 20px;}
+header > nav > h1 > a {font-size: 14px; font-weight: bold; color: #fff; letter-spacing: .5em;display:flex;align-items: center;}
+header > nav > .top-menu {display: flex;}
+header > nav > .top-menu > span { margin-right: 20px; font-weight: bold; color: #fff; letter-spacing: .2em;}
+header > nav > .top-menu > .hamburger { width: 30px; height: 20px; position: relative; cursor: pointer;}
+header > nav > .top-menu > .hamburger > div {
+    background-color: #fff; width: 30px; height: 2px; transition:.3s;
+    position: absolute; top: 0; right: 0;
+}
+header > nav > .top-menu > .hamburger > div:nth-child(1){top: 0; right: 0; transform: rotate(0);}
+header > nav > .top-menu > .hamburger > div:nth-child(3){top: 20px; right: 0;transform: rotate(0);}
+header > nav > .top-menu > .hamburger > div:nth-child(2){top: 10px; right: 0;transform: rotate(0);}
+/* header > nav > .top-menu > .hamburger > div:nth-child(2) {margin: 6px 0;} */
+
+section {overflow: hidden; width: 100vw; height: 100vh; position: relative;}
+/* section {overflow: hidden; width: 100%; height: 100%; position: relative;} */
+section {position:fixed;}
+
+section > .index { position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; color: #fff; font-weight: bold; font-size: 3vw; z-index:9; background-color: rgba(0, 0, 0, .2); font-style:italic;}
+
+
+/* commom */
+#cursor-dot,#cursor-bg,#progress{overflow:hidden;position:fixed;top:50%;left:50%;-webkit-transform:translateX(-50%) translateY(-50%);-moz-transform:translateX(-50%) translateY(-50%);-o-transform:translateX(-50%) translateY(-50%);-ms-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%) translateY(-50%);
+    pointer-events:none;
+    /* 마우스 커서에 이벤트 요소로 적용할 것이냐 */
+    /* none - 이벤트요소 비활성 */
+    /* auto - 기본값 : 이벤트 요소 활성 */
+}
+#cursor-dot{z-index:600;width:4px;height:4px;border-radius:50%;background-color:#f00}
+#cursor-bg{z-index:400;width:30px;height:30px;border:1px solid #fff;border-radius:50%;-webkit-transition:width 200ms cubic-bezier(0.455,0.030,0.515,0.955),height 200ms cubic-bezier(0.455,0.030,0.515,0.955),background-color 200ms cubic-bezier(0.455,0.030,0.515,0.955),border-color 200ms cubic-bezier(0.455,0.030,0.515,0.955);-moz-transition:width 200ms cubic-bezier(0.455,0.030,0.515,0.955),height 200ms cubic-bezier(0.455,0.030,0.515,0.955),background-color 200ms cubic-bezier(0.455,0.030,0.515,0.955),border-color 200ms cubic-bezier(0.455,0.030,0.515,0.955);-o-transition:width 200ms cubic-bezier(0.455,0.030,0.515,0.955),height 200ms cubic-bezier(0.455,0.030,0.515,0.955),background-color 200ms cubic-bezier(0.455,0.030,0.515,0.955),border-color 200ms cubic-bezier(0.455,0.030,0.515,0.955);-ms-transition:width 200ms cubic-bezier(0.455,0.030,0.515,0.955),height 200ms cubic-bezier(0.455,0.030,0.515,0.955),background-color 200ms cubic-bezier(0.455,0.030,0.515,0.955),border-color 200ms cubic-bezier(0.455,0.030,0.515,0.955);transition:width 200ms cubic-bezier(0.455,0.030,0.515,0.955),height 200ms cubic-bezier(0.455,0.030,0.515,0.955),background-color 200ms cubic-bezier(0.455,0.030,0.515,0.955),border-color 200ms cubic-bezier(0.455,0.030,0.515,0.955)}
+#progress{z-index:500;color:#fff;width:30px;height:30px;border-radius:50%;-webkit-transition:width 200ms cubic-bezier(0.455,0.030,0.515,0.955);-moz-transition:width 200ms cubic-bezier(0.455,0.030,0.515,0.955);-o-transition:width 200ms cubic-bezier(0.455,0.030,0.515,0.955);-ms-transition:width 200ms cubic-bezier(0.455,0.030,0.515,0.955);transition:width 200ms cubic-bezier(0.455,0.030,0.515,0.955)}
+#cursor-bg.active{width:60px;height:60px;background-color:#fff;border-color:#fff;mix-blend-mode:exclusion}
+#progress.active{width:60px;height:60px}
+#progress span{display:block;position:absolute;top:50%;left:50%;text-align:center;-webkit-transform:translateX(-50%) translateY(-50%);-moz-transform:translateX(-50%) translateY(-50%);-o-transform:translateX(-50%) translateY(-50%);-ms-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%) translateY(-50%)}
+#progress.active span::after{content:'select';text-transform:uppercase;font-size:0.833rem;line-height:1.333rem;opacity:0;-webkit-transition:opacity 200ms cubic-bezier(0.455,0.030,0.515,0.955);-moz-transition:opacity 200ms cubic-bezier(0.455,0.030,0.515,0.955);-o-transition:opacity 200ms cubic-bezier(0.455,0.030,0.515,0.955);-ms-transition:opacity 200ms cubic-bezier(0.455,0.030,0.515,0.955);transition:opacity 200ms cubic-bezier(0.455,0.030,0.515,0.955)}
+#progress.active span::after{opacity:1.0}

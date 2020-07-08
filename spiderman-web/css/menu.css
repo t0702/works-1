@@ -1,0 +1,75 @@
+/* menu */
+div.menu-wrapper {
+    width: 100vw; height: 100vh;
+    background: url('../img/menu-bg.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* z-index: -999; */
+}
+div.menu-wrapper > .text-wrap {position: absolute; top: 130px; left: 3vw; z-index:9; color: #fff; } 
+div.menu-wrapper > .text-wrap > .say {font-size: 35px; font-weight: bold; text-decoration-line: underline; margin-bottom: 5vh;}
+div.menu-wrapper > .text-wrap > p {font-size: 16px; margin-bottom: 4vh; line-height: 1.8em;}
+div.menu-wrapper > .text-wrap > p:nth-child(1) {}
+
+div.menu-wrapper .back-bg{
+    width: 100vw; height: 100vh; position: absolute; top: 0; left: 0;
+    background-color: rgba(0,0,0,0.4);
+}
+
+div.menu-wrapper > .box-list {
+    width: 100vw; height: 100vh; z-index: 9;
+    position: absolute; top: 0; left: 50%; transform: translateX(-50%)
+}
+div.menu-wrapper > .box-list > section {
+    width: 21vw; height: 21vw; position: absolute; bottom: 5vh;
+    border: 1px solid #fff; transition: .5s ease; overflow: hidden;
+    /* cursor: pointer; */
+}
+div.menu-wrapper > .box-list > section.zoom {
+    width: 21vw; height: 21vw; position: absolute; bottom: 5vh;
+    border: 1px solid #fff; 
+    /* cursor:none; */
+}
+
+/* div.menu-wrapper > .box-list > section > * {
+    visibility: hidden; opacity: 0;
+} */
+
+div.menu-wrapper > .box-list > section.home{left: 2vw;}
+div.menu-wrapper > .box-list > section.home > * {visibility: hidden; opacity: 0;}
+div.menu-wrapper > .box-list > section.home.zoom > * {visibility: visible; opacity: 1; }
+
+div.menu-wrapper > .box-list > section.synopsis{left: 26.8vw; background-position: left;}
+div.menu-wrapper > .box-list > section.synopsis > .cardbox { visibility: hidden; opacity: 0; transition:.3s; pointer-events: none;}
+div.menu-wrapper > .box-list > section.synopsis.zoom > .cardbox {visibility: visible; opacity: 1; pointer-events: auto;}
+div.menu-wrapper > .box-list > section.synopsis.zoom {background-position: center;}
+
+div.menu-wrapper > .box-list > section.cast{left: 51.3vw; background-color: white;}
+div.menu-wrapper > .box-list > section.cast > .slider > ul > li {width: 21vw; height: 21vw; background-position: 10%;}
+div.menu-wrapper > .box-list > section.cast > .contents-area { visibility: hidden; opacity: 0; transition-delay: 0;}
+div.menu-wrapper > .box-list > section.cast.zoom > .slider > ul > li {width: 100vw; height: 100vh; background-position: center;}
+div.menu-wrapper > .box-list > section.cast.zoom > .contents-area { visibility: visible; opacity: 1; }
+
+div.menu-wrapper > .box-list > section.trailer{left: 75.5vw; background: url('../img/video-page-thumb.png') no-repeat; background-size: cover; background-position: center;}
+/* div.menu-wrapper > .box-list > section.trailer > * {visibility: hidden; } */
+div.menu-wrapper > .box-list > section.trailer > .contents {visibility: hidden; opacity: 0; transition: .3s; }
+div.menu-wrapper > .box-list > section.trailer > .video-area {visibility: hidden;}
+div.menu-wrapper > .box-list > section.trailer > .video-btn { visibility: hidden;}
+/* div.menu-wrapper > .box-list > section.trailer > .video-prev { visibility: hidden;} */
+/* div.menu-wrapper > .box-list > section.trailer > .video-next { visibility: hidden; } */
+div.menu-wrapper > .box-list > section.trailer > .video-btn-back { visibility: hidden;}
+div.menu-wrapper > .box-list > section.trailer.zoom {background: #000; }
+/* div.menu-wrapper > .box-list > section.trailer.zoom > * {visibility: visible; } */
+div.menu-wrapper > .box-list > section.trailer.zoom > .contents {visibility: visible; opacity: 1;}
+div.menu-wrapper > .box-list > section.trailer.zoom > .video-area {visibility: visible; }
+div.menu-wrapper > .box-list > section.trailer.zoom > .video-btn-back { visibility: visible;}
+div.menu-wrapper > .box-list > section.trailer.zoom > .video-btn { visibility: visible;}
+/* div.menu-wrapper > .box-list > section.trailer.zoom > .video-prev { visibility: hidden;}
+div.menu-wrapper > .box-list > section.trailer.zoom > .video-next { visibility: hidden;} */
+
+div.menu-wrapper > .box-list > section > .index { visibility: visible; transition: none; transition-delay: none; opacity: 1;}
+div.menu-wrapper > .box-list > section.zoom > .index { visibility: hidden;}
+div.menu-wrapper > .box-list > section.zoom{
+    width: 100vw; height: 100vh; bottom: 0; left: 0; z-index: 999; 
+    border: none;
+}

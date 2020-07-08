@@ -1,0 +1,58 @@
+/* section.cast {display: none;} */
+section.cast > .slider {
+    width: 100vw; height: 100vh;
+    /* background: url('../img/cast-tomholland.jpg') ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover; */
+    position: absolute; top: 0; left: 0;
+}
+
+section.cast > .slider ul{width: 100vw; height: 100vh;}
+section.cast > .slider ul li:first-child{background-image: url('../img/cast-tomholland.jpg'); background-position: center;}
+section.cast > .slider ul li:nth-child(2){background-image: url('../img/cast-mysterio.jpg');  opacity: 0; background-position: center;}
+section.cast > .slider ul li:nth-child(3){background-image: url('../img/cast-nickfury.jpg'); opacity: 0; background-position: center; }
+section.cast > .slider ul li:last-child{background-image: url('../img/cast-michelle.jpg'); opacity: 0; background-position: center; }
+section.cast > .slider ul li{
+    width: 100%; height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    position: absolute; top: 0; left: 0;
+    transition: 0.5s;
+}
+
+section.cast > .dark-bg {
+    width: 100%; height: 100%; position: absolute; top: 0; left: 0;
+    background: linear-gradient(-45deg, rgba(0,0,0,.4), rgba(0,0,0,0) 50%);}
+section.cast > .contents-area {position: relative; padding: 30px; display:flex; flex-direction: column; align-items: flex-end; justify-content: flex-end; height: 100vh;}
+section.cast > .contents-area > .profile-area {position: relative; width: 100vw; }
+section.cast > .contents-area > .profile-area >.profile {
+    mix-blend-mode: overlay; color: #fff; text-align: right;
+    display:flex; flex-direction: column; align-items: flex-end;
+    position: absolute; right: 0; bottom: 0; visibility: hidden;
+}
+section.cast > .contents-area > .profile-area >.profile:first-child{visibility: visible;}
+
+section.cast > .contents-area > .profile-area > .profile > h2{font-size: 88px; font-weight: normal;  margin: 0; line-height: 1em;}
+section.cast > .contents-area > .profile-area > .profile > div.part{font-size: 15px; letter-spacing: 1em; margin: 20px 0;}
+section.cast > .contents-area > .profile-area > .profile > p{font-size: 14px; line-height: 1.7em; width: 450px; margin: 0;}
+
+
+section.cast > .contents-area > .arrow {display:flex; margin-top: 30px;}
+section.cast > .contents-area > .arrow > div {
+    width: 40px; height: 40px; border:1px solid #fff; border-radius: 100%;
+    margin-left: 10px; text-indent: -9999em; background: url('../img/cast-arrow-prev.png') no-repeat;
+    background-position: 0 -1px; transition: .2s ease; cursor:pointer;
+}
+section.cast > .contents-area > .arrow > div.prev:hover {background-position: -41px -1px;}
+section.cast > .contents-area > .arrow > div.next{background:url('../img/cast-arrow-next.png') no-repeat; background-position: -40px -1px;}
+section.cast > .contents-area > .arrow > div.next:hover {background-position: 1px -1px;}
+section.cast > .contents-area > .arrow > div:hover { background-color: rgba(255,255,255,.2);}
+
+section.cast > .contents-area > .slide-list {display:flex; margin-top: 30px;}
+section.cast > .contents-area > .slide-list li {width: 70px; height: 70px; border-radius: 100%; border: 5px solid rgba(255,255,255,0.5); margin-left: 10px; cursor:pointer;}
+section.cast > .contents-area > .slide-list li.selected {border-color:#fff;}
+section.cast > .contents-area > .slide-list li img {width: 100%; height: 100%;}
+
+/* section.cast > .contents-area > .profile-area > .view {visibility: visible;} */
