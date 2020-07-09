@@ -37,6 +37,7 @@ body{
 #flame{
     position: absolute;
     height: 100%;
+    width: 100%;
     mix-blend-mode: screen;
     user-select: none;
     pointer-events: none;
